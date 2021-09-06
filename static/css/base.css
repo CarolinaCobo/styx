@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background: url("/media/homepage_background_cropped.jpg") no-repeat fixed;
-  background-position: bottom 60px right 100px;
+  background: url("/media/homepage_background_cropped.jpg") no-repeat;
+  background-position: bottom 40px right 100px;
   background-size: 500px 500px;
   height: calc(100vh - 164px);
   color: var(--black);
@@ -73,6 +73,10 @@ body {
 
 .border-radius {
   border-radius: 8px 0 0 8px;
+}
+
+.bg-black {
+  background: var(--black) !important;
 }
 
 /*  Media Queries */
