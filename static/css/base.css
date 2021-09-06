@@ -40,6 +40,11 @@ body {
   background: var(--black);
   color: white;
   min-width: 260px;
+  border-radius: 8px;
+}
+
+.shoes-logo {
+  font-size: 190px;
 }
 
 .btn-black {
