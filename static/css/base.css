@@ -76,7 +76,7 @@ body {
 }
 
 .bg-black {
-  background: var(--black) !important;
+  background: grey !important;
 }
 
 /*  Media Queries */
