@@ -19,20 +19,12 @@
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "clearance",
-            "friendly_name": "Clearance"
-        }
-    },
-    {
-        "pk": 4,
-        "model": "products.category",
-        "fields": {
             "name": "deals",
             "friendly_name": "Deals"
         }
     },
     {
-        "pk": 5,
+        "pk": 4,
         "model": "products.category",
         "fields": {
             "name": "basics",
@@ -40,7 +32,7 @@
         }
     },
     {
-        "pk": 6,
+        "pk": 5,
         "model": "products.category",
         "fields": {
             "name": "running",
@@ -48,7 +40,7 @@
         }
     },
     {
-        "pk": 7,
+        "pk": 6,
         "model": "products.category",
         "fields": {
             "name": "underwear",
@@ -56,7 +48,7 @@
         }
     },
     {
-        "pk": 8,
+        "pk": 7,
         "model": "products.category",
         "fields": {
             "name": "new_arrivals",
@@ -64,7 +56,7 @@
         }
     },
     {
-        "pk": 9,
+        "pk": 8,
         "model": "products.category",
         "fields": {
             "name": "t_shirts",
