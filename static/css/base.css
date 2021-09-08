@@ -75,8 +75,22 @@ body {
   border-radius: 8px 0 0 8px;
 }
 
+.border-radius-card {
+  border-radius: 8px 8px 0 0;
+}
+
 .bg-black {
   background: grey !important;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: white;
+  z-index: -1;
 }
 
 /*  Media Queries */
