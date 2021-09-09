@@ -6,7 +6,7 @@ from .models import Product, Category
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
-
+    print(request, "[][][][][")
     products = Product.objects.all()
     query = None
     categories = None
@@ -28,6 +28,7 @@ def all_products(request):
             products = products.order_by(sortkey)
 
         if 'category' in request.GET:
+
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
