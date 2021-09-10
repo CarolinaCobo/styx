@@ -53,6 +53,12 @@ body {
   border-radius: 0 8px 8px 0;
 }
 
+.btn-outline-black {
+  background: white;
+  color: var(--black) !important;
+  border: 1px solid black;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -81,6 +87,10 @@ body {
 
 .bg-black {
   background: grey !important;
+}
+
+.border-radius-button {
+  border-radius: 8px;
 }
 
 .overlay {
