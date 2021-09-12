@@ -228,13 +228,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003070787",
-      "name": "Nike 3-Pack Cushioned Crew Socks",
-      "description": "Keep things comfy wherever you step with this 3 Pack Cushioned Crew Socks from Nike. In a fresh white colourway, they're made from a comfy cotton blend for a snug wear all day. With ribbed ankle cuffs for a stay-put fit, they're finished with contrasting black Swoosh branding to the cuff.",
+      "name": "Nike Lean Plus Running Armband",
+      "description": "Get a practical workout solution with Swoosh style using this Lean Plus Running Armband from Nike. In a black colourway, this armband is designed to give you somewhere to keep your phone when running - givin' you hands free performance. With a clear window that protects your phone while letting you use the touch screen, this armband has a secure hook-and-loop closure. Finished with a white Swoosh tick.",
       "has_sizes": false,
-      "price": 13.0,
+      "price": 22.0,
       "category": 6,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_103686_a?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_103686_a.jpg"
+      "image_url": "https://i8.amplience.net/i/jpl/jd_113817_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_113817_a.jpg"
     }
   },
   {
@@ -242,13 +242,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003090182",
-      "name": "Nike 6-Pack No Show Socks",
-      "description": "Stock up on your everyday essentials with these 6-Pack No Show Lightweight Socks from Nike. In white colourways, these socks are made from stretchy fabric, which is soft and breathable. They're cut to the ankle and are finished with a Swoosh logo in black. Machine washable.",
+      "name": "Nike Hyperwarm Gloves",
+      "description": "Keep your hands warm throughout the match with these Hyperwarm Gloves from Nike. Made from warm, fleece-lined polyester with a specialised silicone grip for control during throw-ins. With a flexible fit, they can provide comfort without comprising performance.",
       "has_sizes": false,
-      "price": 18.0,
+      "price": 30.0,
       "category": 6,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_389893_a?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_389893_a.jpg"
+      "image_url": "https://i8.amplience.net/i/jpl/jd_296137_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_296137_a.jpg"
     }
   },
   {
@@ -256,13 +256,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003090186",
-      "name": "Nike 2-Pack Everyday Plus Tie-Dye Crew Socks",
-      "description": "Freshen up your everyday essentials with vintage style in these men's 2-Pack Everyday Plus Tie-Dye Crew Socks from Nike. In both a red and blue colourway with an all-over tie dye print, these retro socks are made from soft and stretchy cotton fabric, with added cushioning to key areas for maximum comf'. Using Dri-FIT tech to wick away sweat, they feature breathable mesh panels, these socks are finished with arch band for a snug fit, as well as the iconic Swoosh logo to the cuff. Machine washable.",
+      "name": "Nike HyperCharge 24oz Water Bottle",
+      "description": "Stay hydrated and stay active with this HyperCharge 24oz Water Bottle from Nike. Coming in a clear grey colourway, the bottle features a twist-off top and is textured for a firm grip. The impact-resistant construction delivers unrivalled durability that can survive drops and slips without damage. The addition of an ergonomic handle makes the bottle easy to carry and grab a hold of. Able to storage 24oz of liquid, the bottle is finished with a vertical, white Nike Swoosh branding to the side.",
       "has_sizes": false,
-      "price": 15.0,
+      "price": 22.0,
       "category": 6,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_455491_a?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_455491_a.jpg"
+      "image_url": "https://i8.amplience.net/i/jpl/jd_038128_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_038128_a.jpg"
     }
   },
   {
@@ -270,13 +270,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003161326",
-      "name": "Nike NBA Crew Socks",
-      "description": "Finish off the 'fit with a game-ready look in these NBA Crew Socks from Nike. Made with durable, stretch-knit fabric, these socks feature extra padding to the heel and toe for premium comfort. Comin' in a crew height for a classic, sportswear look, these socks come in a crisp White colourway with a wraparound NBA graphic. Signed off with Nike branding to the top. Machine washable.",
+      "name": "Nike Fundamental Speed Rope",
+      "description": "Step up your training sessions and go back to basics with this Fundamental Speed Rope from Nike. In a black colourway with volt detailing, this speed rope is made with durable fabric to the handles along with a rope made from high-density plastic. With a customisable length to find the perfect speed and rotation, this rope is finished with Swoosh ticks to the bottom of the handles.",
       "has_sizes": false,
-      "price": 18.0,
-      "category": 6,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_455610_a?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_455610_a.jpg"
+      "price": 20.0,
+      "category": 8,
+      "image_url": "https://i8.amplience.net/i/jpl/jd_113818_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_113818_a.jpg"
     }
   },
   {
@@ -284,13 +284,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003230723",
-      "name": "Nike Court T-Shirt",
-      "description": "Add an essential to your rotation with this men's Court T-Shirt by Nike. In a White colourway, this standard-fit tee is made from soft cotton fabric for a soft feel, it features a crew neckline with short sleeves for a classic, casual look. Finished with several Swoosh logos to the chest. Machine washable.",
+      "name": "Wilson NBA Chicago Bulls Mini Hoop Set",
+      "description": "Keep it fun on your lunch break with this NBA Chicago Bulls Mini Hoop Set from Wilson. In a red, white and black colourway, this small b-ball set has a durable backboard that hangs over any door and a fold-away hoop that's easy to pack and travel. With a smooth and lightweight ball to dunk with, this set is finished with Wilson branding throughout, as well as the Bulls logos and the NBA logo.",
       "has_sizes": false,
-      "price": 30.0,
+      "price": 23.0,
       "category": 7,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_472396_a?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_472396_a.jpg"
+      "image_url": "https://i8.amplience.net/i/jpl/jd_455144_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_455144_a.jpg"
     }
   },
   {
@@ -298,13 +298,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003270936",
-      "name": "Under Armour Tech Camo T-Shirt",
-      "description": "Hit the gym and get gainin' in this men's Tech Camo T-Shirt from Under Armour. In a Blue Camo colourway, this tee is made from light, breathable polyester for a cool, comfy feel. It features UA sweat-wicking tech to keep you dry and focussed, with short sleeves and a crew neckline in a classic cut for a flexible fit. This top is signed off with UA branding to the chest. Machine washable.",
+      "name": "adidas Speed 50 Boxing Gloves",
+      "description": "Step up your performance in the ring with these men's Speed 50 Boxing Gloves from adidas. In a Black colourway, these gloves are made from durable poly with foam padding throughout for a comfy wear and essential protection. Coming with an elasticated strap for the perfect fit, these gloves take your speed and technique to the next level. Finished with signature adidas branding to the back of the hands and thumb..",
       "has_sizes": false,
-      "price": 30.0,
-      "category": 8,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_462272_a?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_462272_a.jpg"
+      "price": 35.0,
+      "category": 6,
+      "image_url": "https://i8.amplience.net/i/jpl/jd_463752_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_463752_a.jpg"
     }
   },
   {
@@ -312,13 +312,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003360384",
-      "name": "Nike Miler Short Sleeve T-Shirt",
-      "description": "Beat your PB and push your performace in this Miler Short Sleeve T-Shirt from Nike. In a Oracle Aqua colourway, this standard-fit tee is made from a lightweight and breathable poly blend that features Dri-FIT tech for cool comfort. Coming with an all over graphic that's inspired by velocity studies, this tee has short sleeves, a crew neckline and a elongated hem to optimise the fit for running. Finished up with reflective detailing and Swoosh branding for visibility on low light runs. Machine washable.",
+      "name": "Nike Elemental Backpack",
+      "description": "Secure the essentials with this Elemntal Backpack from Nike. Comin' in a black colourway, this bag is made with super-durable water-resistant poly fabric and features a large main compartment with a secure zip fastening. It has 2 side pockets and a smaller zippered pocket to the front to keep ya' smaller bits organised, with a detachable pencil case. This bag features a padded back and adjustable straps for a comfortable, custom feel with a haul loop for easy carrying. Finished off with tonal Nike Air branding to the front.",
       "has_sizes": false,
-      "price": 32.0,
+      "price": 29.0,
       "category": 8,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_356942_a?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_356942_a.jpg"
+      "image_url": "https://i8.amplience.net/i/jpl/jd_458083_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_458083_a.jpg"
     }
   },
   {
@@ -326,13 +326,13 @@
     "model": "products.product",
     "fields": {
       "sku": "pp5003440111",
-      "name": "adidas Originals LOUNGEWEAR Adicolor Essentials T-Shirt",
-      "description": "Bag a staple style with this women's Essential Oversized T-Shirt from adidas Originals. In an Ambient Blush colourway, this tee is made with soft, lightweight cotton for premium comfort all day long. With an oversized fit for a chilled vibe, it features short dropped-shoulder sleeves, and a ribbed crew neckline. Signed off with adi's iconic Trefoil logo to the chest in White. Machine washable",
+      "name": "The North Face Sun Stash Bucket Hat",
+      "description": "Finish your 'fit with some retro style in this Sun Stash Bucket Hat from The North Face. Reversible in its design, this hat comes in a black colourway and is made from a water-repellent polyester ripstop. Equipped with UPF 50 protection to protect your, this hat features a 360 peak. Folding away into its own pocket for easy packing when on the move, this hat is finished with signature The North Facce branding.",
       "has_sizes": false,
       "price": 25.0,
       "category": 8,
-      "image_url": "https://i8.amplience.net/i/jpl/jd_459872_b?qlt=92&w=750&h=957&v=1&fmt=webp",
-      "image": "jd_459872_b.jpg"
+      "image_url": "https://i8.amplience.net/i/jpl/jd_400015_a?qlt=92&w=750&h=957&v=1&fmt=webp",
+      "image": "jd_400015_a.jpg"
     }
   }
 ]

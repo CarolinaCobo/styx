@@ -43,8 +43,8 @@
         "pk": 6,
         "model": "products.category",
         "fields": {
-            "name": "underwear",
-            "friendly_name": "Underwear"
+            "name": "equipment",
+            "friendly_name": "equipment"
         }
     },
     {
@@ -59,8 +59,8 @@
         "pk": 8,
         "model": "products.category",
         "fields": {
-            "name": "t_shirts",
-            "friendly_name": "T-Shirts"
+            "name": "accessories",
+            "friendly_name": "accessories"
         }
     }
 ]
