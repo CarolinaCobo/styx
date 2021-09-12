@@ -13,10 +13,10 @@
 <div class="overlay"></div>
 <div class="container mb-2">
     <div class="row">
-        <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Shopping Bag</h2>
-            <hr>
+        <div class="col text-center mt-3">
+
+            <h2 class="logo-font">Shopping Bag</h2>
+
         </div>
     </div>
 
@@ -42,12 +42,15 @@
                         </td>
                         <td class="py-3">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0"><strong>Size: </strong>
+                                {% if item.product.has_sizes %}{{ item.size|upper}}{% else %}N/A{% endif %}</p>
+
                             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
                         </td>
                         <td class="py-3">
                             <p class="my-0">€{{ item.product.price }}</p>
                         </td>
-                        <td class="py-3 w-25">
+                        <td class="py-3 w-25 border-radius-button">
                             <p class="my-0">{{ item.quantity }}</p>
                         </td>
                         <td class="py-3">
@@ -70,13 +73,13 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-right">
-                            <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg">
+                            <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg border-radius-button">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-black rounded-0 btn-lg">
+                            <a href="" class="btn btn-black btn-lg border-radius-button">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
@@ -88,7 +91,7 @@
             </div>
             {% else %}
             <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg">
+            <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg border-radius-button">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
