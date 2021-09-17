@@ -1,1 +1,1 @@
-web: gunicorn styx-shoes.wsgi:application
+web: gunicorn styx.wsgi:application
