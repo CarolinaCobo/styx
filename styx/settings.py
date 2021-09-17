@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-cy2n&8c(nryx-&f)y80^e!!!+@=7pas&iu-y$@=^#ayesh855_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['styx-shoes.herokuapp.com']
 
 
 # Application definition
@@ -124,12 +124,20 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'styx.wsgi.application'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+#  Databases
+
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 
 # Password validation
