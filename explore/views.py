@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from .models import Post
 
-# Create your views here.
+
+def view_explore(request):
+    """ Returns blog.html """
+    context = {
+        'posts': Post.objects.all()
+    }
+    return render(request, 'explore/explore.html', context)
