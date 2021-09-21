@@ -3,7 +3,7 @@ from .models import Post
 
 
 def view_explore(request):
-    """ Returns blog.html """
+    """ Returns explore.html """
     context = {
         'posts': Post.objects.all()
     }
