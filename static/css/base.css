@@ -9,9 +9,6 @@ html {
 }
 
 body {
-  background: url("/media/homepage_background_cropped.jpg") no-repeat;
-  background-position: bottom 40px right 100px;
-  background-size: 500px 500px;
   height: calc(100vh - 164px);
   color: var(--black);
   font-family: "DM Sans", sans-serif;
@@ -126,6 +123,16 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+
+#delivery-banner {
+  height: 60px;
+}
+
+#delivery-banner h4 {
+  margin: auto;
+  width: 50%;
+  padding: 30px;
+}
 
 /************ bootstrap toasts */
 
@@ -310,13 +317,63 @@ input[name='q']::placeholder {
         padding-top: 164px;
     }
 }
+
+
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-    .header-container {
-        padding-top: 116px;
-    }
+  .header-container {
+    padding-top: 116px;
+  }
 
-    body {
-        height: calc(100vh - 116px);
-    }
+  body {
+    height: calc(100vh - 116px);
+  }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+  .header-container {
+    padding-top: 116px;
+  }
+
+  body {
+    height: calc(100vh - 116px);
+  }
+
+  .display-4.logo-font.text-black {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    padding: 0.15rem;
+  }
+
+  .nav-link i.fa-lg {
+    font-size: 1rem;
+  }
+
+  .navbar-toggler {
+    padding: 0.6rem 0.6rem;
+    font-size: 1rem;
+  }
+
+  #delivery-banner h4 {
+    font-size: 0.9rem;
+  }
+
+  .btn.btn-outline-black.border-radius-button,
+  .btn.btn-black.border-radius-button {
+    padding: 0.375rem 0.375rem;
+  }
+
+  .btn.btn-outline-black.border-radius-button.btn-lg,
+  .btn.btn-black.border-radius-button.btn-lg {
+    padding: 0.375rem 0.375rem;
+    font-size: 0.75rem;
+  }
+
+  .increment-qty,
+  .decrement-qty {
+    padding: 0.25rem 0.5rem !important;
+  }
 }

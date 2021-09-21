@@ -2,26 +2,32 @@
 {% load static %}
 
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
     </div>
+</div>
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="text-black shoes-logo">
-                    SHOES.
-                </h1>
-                <div class="my-5">
-                    <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
-                    </h4>
-                </div>
+<div class="container h-100">
+    <div class="row h-100">
+        <div class="col-md-12 my-auto">
+            <h1>
+                SHOES.
+            </h1>
+            <h3>
+                & more
+            </h3>
+            <div class="my-5">
+                <h4>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg text-uppercase py-3">Shop Now</a>
+                </h4>
+                <h4>
+                    <a href="" class="shop-now-button btn btn-lg text-uppercase py-3">Explore</a>
+                </h4>
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
