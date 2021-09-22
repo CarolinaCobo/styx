@@ -1,0 +1,38 @@
+[
+    {
+        "model": "explore.post",
+        "pk": 1,
+        "fields": {
+            "image_url": "https://cdn.pixabay.com/photo/2017/05/25/15/08/jogging-2343558_960_720.jpg",
+            "image": "explore-photo-1.jpg",
+            "post_title": "Benefits of running",
+            "post_content": "Running Improves Your Health Believe it or not, running is actually a great way to increase your overall level of health. Research shows that running can raise your levels of good cholesterol while also helping you increase lung function and use. In addition, running can also boost your immune system and lower your risk of developing blood clots. It Prevents Disease and you Might Lose Weight!",
+            "post_date_posted": "2021-04-21T12:37:00Z",
+            "post_author": 1
+        }
+    },
+    {
+        "model": "explore.post",
+        "pk": 2,
+        "fields": {
+            "image_url": "https://cdn.pixabay.com/photo/2017/04/27/08/29/man-2264825_960_720.jpg",
+            "image": "explore-photo-2.jpg",
+            "post_title": "How do you keep momentum up when you’re on a fitness regime?",
+            "post_content": "Over the course of our movement for mood series, the goal has been to give you the best information to improve your mental and physical health, to make it seem easy and to give you information that works. The advice from these videos and the exercise booklet works so never be afraid to give it a try. In this series, I want to give you information to ensure that you keep seeing results from your exercise, by seeing results you will stay motivated and healthier for longer, so apply these tips and keep up the good work. \r\n Change \r\n Measure \r\n Event \r\n Reward \r\n Train with those fitter than you \r\n and have fun!",
+            "post_date_posted": "2021-05-02T16:19:21Z",
+            "post_author": 1
+        }
+    },
+    {
+        "model": "explore.post",
+        "pk": 3,
+        "fields": {
+            "image_url": "https://cdn.pixabay.com/photo/2017/11/18/05/02/yoga-2959226_960_720.jpg",
+            "image": "explore-photo-3.jpg",
+            "post_title": "How can yoga breathing help your stress levels?",
+            "post_content": "Think of your breath as a bridge. It is a bridge between your head and your body, a bridge between your conscious and your unconscious. Your breath is a tool that allows you to take control over what you feel you can't control. Stress and anxiety are experiences that make us feel very out of control. Ranging from feeling a bit overwhelmed and unhappy to being completely unable to cope and disabled by panic. These feelings can seem to appear from nowhere and often come at the worst times, making us feel small, useless and miserable. So, our first reaction to stress is to try and 'pull ourselves together' and resolve all the problems in our head. But mentally resolving problems won't make you feel less stressed, because the stress is actually in your body. We've all had those nights, lying in bed, going over and over the worrying thoughts; it just makes you feel worse.",
+            "post_date_posted": "2021-05-02T16:32:20.040Z",
+            "post_author": 1
+        }
+    }
+]
