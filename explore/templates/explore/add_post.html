@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_header %}
+<!-- Push Content Down Page -->
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Overlay for Background Image -->
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 offset-md-3">
+            <h2 class="mb-4 text-center mt-3"> Posts Management</h2>
+            <h5 class="text-muted text-center">Add a Post to Explore</h5>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 offset-md-3">
+            <!-- Add Post Form-->
+            <form method="POST" action="{% url 'add_post' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for field in post_form %}
+                {% if field.name != 'image' %}
+                {{ field | as_crispy_field }}
+                {% else %}
+                {{ field }}
+                {% endif %}
+                {% endfor %}
+                <div class="text-right">
+                    <a class="btn rounded-5 link-button" href="{% url 'view_explore' %}">Cancel</a>
+                    <button class="btn rounded-5 continue-button" type="submit">Add Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

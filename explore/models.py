@@ -1,10 +1,9 @@
 from django.db import models
-from django.contrib.auth.models import User
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 
 class Post(models.Model):
-    """ Model for post created """
     image_url = models.URLField(max_length=1024, default="", blank=True)
     image = models.ImageField(default="", blank=True)
     post_title = models.CharField(max_length=100)
@@ -22,7 +21,6 @@ class Post(models.Model):
 
 
 class Comment(models.Model):
-    """ Model for comments created """
     post_id = models.ForeignKey('Post', null=True,
                                 related_name="comments", blank=True,
                                 on_delete=models.SET_NULL)

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_header %}
+<!-- Push Content Down Page -->
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Overlay for Background Image -->
+<div class="overlay"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 offset-md-3">
+            <h2 class="mb-4 text-center mt-3">Edit Comment</h2>
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 offset-md-3">
+            <!-- Edit Comment Form-->
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group">
+                    {{ comment_form|crispy }}
+                </fieldset>
+                <div class="text-right">
+                    <a class="btn rounded-5 link-button" href="{% url 'view_explore' %}">Cancel</a>
+                    <button class="btn rounded-5 post-comment continue-button" type="submit">Edit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
