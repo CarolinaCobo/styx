@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block page_header %}
+<!-- Push Content Down Page -->
+<div class="container header-container">
+    <div class="row">
+        <div class="col">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<!-- Explore Post -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2>Explore</h2>
+            <hr class="w-50">
+        </div>
+    </div>
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row mt-1 mb-0">
+                <div class="col-12 col-md-6 order-md-first">
+                    <p class="text-muted mt-3 text-center text-md-left">
+                        <!-- Explore Counter -->
+                        <span class="small"><a href="{% url 'view_explore' %}" class="link-button">All Explore Posts</a>
+                            | </span>
+                        {{ posts|length }} Posts
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% for post in posts %}
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
+            <!-- Get 'Explore Image' or 'No Image' Image -->
+            <div class="my-5 pl-3 pr-3">
+                {% if post.image %}
+                <a href="{% url 'explore_detail' post.id %}">
+                    <img class="card-img-top img-fluid explore border-blue" src="{{ post.image.url }}"
+                        alt="{{ post.post_title }}">
+                </a>
+                {% else %}
+                <a href="{% url 'explore_detail' post.id %}">
+                    <img class="card-img-top img-fluid explore border-blue" src="{{ MEDIA_URL }}noimage.png"
+                        alt="{{ post.post_title }}">
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="mb-5 mt-md-5 pl-3 pr-3">
+                <!-- Get Explore Title -->
+                <a href="{% url 'explore_detail' post.id %}" class="name-link">
+                    <p class="lead mb-3 font-weight-bold">{{ post.post_title }}</p>
+                </a>
+                <hr>
+                <!-- Get Explore Author -->
+                <p class="mb-0 text-left">{{ post.post_author }}</p>
+                <small class="text-muted">{{ post.post_date_posted|date:'F d, Y' }}</small>
+            </div>
+        </div>
+    </div>
+    <hr class="w-50">
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block postload_js %}
+{{ block.super }}
+
+{% include 'explore/includes/js/carousel_js.html' %}
+{% endblock %}
