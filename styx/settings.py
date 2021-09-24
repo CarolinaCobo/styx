@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'explore',
+    'subscription',
 
 
     # Other
@@ -229,6 +230,12 @@ STRIPE_CURRENCY = 'eur'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
+
+
+# MAILCHIMP CREDENTIALS
+MAILCHIMP_API_KEY = os.getenv('MAILCHIMP_API_KEY', '')
+MAILCHIMP_DATA_CENTER = "us5"
+MAILCHIMP_EMAIL_LIST_ID = "b3ad97496f"
 
 # Send emails
 

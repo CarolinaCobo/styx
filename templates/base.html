@@ -159,6 +159,27 @@
     {% block content %}
     {% endblock %}
 
+
+    <div id="newsletter-banner" class="row text-center">
+        <div class="col bg-black text-white">
+            <form action="{% url 'email_list_signup' %}" method="POST">
+                <div class="text-center">
+                    <span><strong>Interested to be the first one in getting the new releases?</strong></span>
+                    <div class="mt-3">
+                        {% csrf_token %}
+                        {{ form | crispy }}
+                    </div>
+                    <div class="modal-footer pb-0">
+                        <button id="signupButton" type="submit" class="btn btn-lg rounded-0">Get our
+                            newsletter</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
     <div id="delivery-banner" class="row text-center">
         <div class="col bg-black text-white">
             <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
