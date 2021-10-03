@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon.ico">
     {% endblock %}
 
     {% block extra_meta %}
@@ -161,29 +161,31 @@
     {% endblock %}
 
 
-    <div id="newsletter-banner" class="row text-center">
-        <div class="col bg-black text-white">
-            <form action="{% url 'email_list_signup' %}" method="POST">
-                <div class="text-center">
-                    <span><strong>Interested to be the first one in getting the new releases?</strong></span>
-                    <div class="mt-3">
-                        {% csrf_token %}
-                        <input type="email" id="email" name="email" placeholder="Introduce your email">
+    <div class="footer">
+
+        <div id="delivery-banner" class="row text-center">
+            <div class="col bg-black text-white">
+                <h4 class="my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+            </div>
+        </div>
+        <div id="newsletter-banner" class="row text-center">
+            <div class="col bg-black text-white">
+                <form action="{% url 'email_list_signup' %}" method="POST">
+                    <div class="text-center">
+                        <span><strong>Interested to be the first one in getting the new releases?</strong></span>
+                        <div class="mt-3">
+                            {% csrf_token %}
+                            <input type="email" id="email" name="email" placeholder="Introduce your email"
+                                class="border-radius-button">
+                        </div>
+                        <button id="signupButton" type="submit" class="btn btn-black border-radius-button">
+                            Get our newsletter</button>
                     </div>
-                    <button id="signupButton" type="submit" class="btn btn-lg btn-black border-radius-button">Get our
-                        newsletter</button>
-
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
 
 
-
-    <div id="delivery-banner" class="row text-center">
-        <div class="col bg-black text-white">
-            <h4 class="logo-font my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
-        </div>
     </div>
 
     {% block postloadjs %}

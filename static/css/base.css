@@ -10,6 +10,7 @@ html {
 
 body {
   height: calc(100vh - 164px);
+  /* min-height: 100vh; */
   color: var(--black);
   font-family: "DM Sans", sans-serif;
 }
@@ -302,6 +303,14 @@ input[name='q']::placeholder {
 }
 
 
+
+.footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {

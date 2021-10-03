@@ -558,8 +558,6 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 
 8. In focus folder make a `.env` file and add the variables below.
 
-   > There is a handy .templates.env file with all the variables.
-
    | Key                 |      Value      |
    | ------------------- | :-------------: |
    | SECRET_KEY          | < Your Values > |
@@ -577,69 +575,40 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
    $ pip install -r requirements.txt
    ```
 
-10. Open up blog.forms and comment out lines 8 and 9
-
-    ```python
-    # for item in choices:
-    #     choices_list.append(item)
-    ```
-
-11. Then migrate
+10. Then migrate
 
     ```bash
     $ python manage.py migrate
     ```
 
-12. Once the migrations are complete, uncomment blog.forms
-
-    ```python
-    for item in choices:
-        choices_list.append(item)
-    ```
-
-13. Before creating a superuser you'll need to load the required fixtures.
-
-    > The reason for this is that a signal is used to assign a membership to a user when they are created, If there is no memberships it can't assign anything and causes an error.
+11. Before creating a superuser it's required to load the required fixtures.
 
     ```bash
-    $ python manage.py loaddata fixtures/required.json
+    $ python manage.py loaddata fixtures/nameFile.json
     ```
 
-14. Create superuser.
+12. Create superuser.
 
     ```bash
     $ python manage.py createsuperuser
     ```
 
-15. To populate the shop with products, load products data.
+13. To populate the shop with products, load products data.
 
     ```bash
     $ python manage.py loaddata products.json
     ```
 
-16. If you want to use the allauth social accounts, and have you [Facebook](https://developers.facebook.com/products/facebook-login/) secrets setup. add them to the `.env` file.
-    | Key                         |      Value      |
-    | --------------------------- | :-------------: |
-    | SOCIAL_AUTH_FACEBOOK_KEY    | < Your Values > |
-    | SOCIAL_AUTH_FACEBOOK_SECRET | < Your Values > |
-
-    If you are not using the social accounts, comment out lines 60/61 in settings.py (INSTALLED_APPS) socialaccounts.
-
-17. Run project with
+14. Run project with
 
     ```bash
     $ python manage.py runserver
     ```
 
- <div align="right">
-
-[Back to Top :arrow_up:](#table-of-contents)
-
-</div>
 
 ### Heroku Deployment
 
-You will need a [AWS](https://aws.amazon.com/s3/) account and a [S3 bucket](https://aws.amazon.com/s3/) to hold all the static files for this project.
+Fisrtly, it's required to have an [AWS](https://aws.amazon.com/s3/) account and a [S3 bucket](https://aws.amazon.com/s3/) to hold all the static files for this project.
 If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/latest/) socialaccounts logins, you can find out more here. [Facebook](https://developers.facebook.com/products/facebook-login/) and [Google](https://developers.google.com/identity/sign-in/web/sign-in)
 
 1.  Open Heroku.
@@ -666,9 +635,6 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
     }
     ```
 
-    > In Heroku, Click into the settings tab and navigate to **'reveal config vars'**.
-    > Here you will find the _'DATABASE_URL'_.
-
 11. Make migrations by following steps 10-15 in [Local deployment](#local-deployment).
 12. After migrations are complete, change database configurations to:
 
@@ -686,8 +652,6 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
         }
     ```
 
-    > This uses Postgres in deployment and sqlite3 in development.
-
 13. Enter in all your AWS variables as well as all your `.env` variables into Heroku's Config Vars.
 
     | Key                   |      Value      |
@@ -696,13 +660,6 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
     | AWS_ACCESS_KEY_ID     | < Your Values > |
     | USE_AWS               |      True       |
 
-    > You will get in them when you setup your [AWS bucket](https://aws.amazon.com/s3/).
-    > If you are wanting to use the [allauth](https://django-allauth.readthedocs.io/en/latest/) social accounts, uncomment out lines 60-61 from settings.py (INSTALLED_APPS socialaccounts) and add your [Facebook](https://developers.facebook.com/products/facebook-login/) secrets into the 'Config Vars'. [Googel](https://developers.google.com/identity/sign-in/web/sign-in) setup here.
-
-    | Key                         |      Value      |
-    | --------------------------- | :-------------: |
-    | SOCIAL_AUTH_FACEBOOK_KEY    | < Your Values > |
-    | SOCIAL_AUTH_FACEBOOK_SECRET | < Your Values > |
 
 14. In your Terminal. Navigate to your directory.
     Login to Heroku using the Terminal
@@ -732,7 +689,7 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 18. Commit changes to Github
 
     ```bash
-    $ commit -m "You message"
+    $ commit -m "Description"
     ```
 
 19. Now that heroku is ready to go, Inside the Django setting.py you will need to set up the AWS configs so the static files have a place to go.
@@ -760,7 +717,7 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
         >Specifies the hosts that focus can run on
 
         ```python
-            ALLOWED_HOSTS = ['127.0.0.1', 'focus-fitness.herokuapp.com']
+            ALLOWED_HOSTS = ['127.0.0.1', 'styx-shoes.herokuapp.com']
          ```
 
 20. You are ready to push to Heroku
@@ -769,14 +726,14 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
     $ git push heroku master
     ```
 
-21. When your app is deployed successfully. Click '_Open App_' in to top right hand corner of Heroku to open app in browser.
+21. When your app is deployed successfully. Click _Open App_ in to top right hand corner of Heroku to open app in a new tab in the browser.
 
 # Credits
 
 ## Content 
 
-1. Clothes info and pictures - [JD Sports](https://www.jdsports.ie/)
-2. . Wireframes - [Balsamiq](https://balsamiq.com/wireframes/)
+1. Products info and pictures - [JD Sports](https://www.jdsports.ie/)
+2. Wireframes - [Balsamiq](https://balsamiq.com/wireframes/)
 3. Data Schema - [DBDiagram](https://dbdiagram.io)
 
 ## Media 
