@@ -232,6 +232,8 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 
+CONVERKIT_API_KEY = os.getenv('CONVERKIT_API_KEY', '')
+
 # Send emails
 
 if 'DEVELOPMENT' in os.environ:

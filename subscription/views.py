@@ -14,39 +14,34 @@ def subscribe(email):
     """
     View for handling sending the subscription to mailchimp
     """
-    print(email)
     newData = {
-        'api_key': 'H8BbA--hjpsNGhtZYLEncQ',
-        'email': "niall@codu.ie",
+        'api_key': settings.CONVERKIT_API_KEY,
+        'email': email,
     }
     headers = {'Content-type': 'application/json'}
 
-    # data = {"email_address": email, "status": "subscribed"}
     r = requests.post(
         url, data=json.dumps(newData), headers=headers
     )
-    print("here _______")
-    print(r.json())
-    return r.status_code, r.json()
+
+    return r.json()
 
 
 def email_list_signup(request):
-    """
-    Checks if user is signed up and if not sends the email address to mailchimp
-    """
-    print("+++++++")
-    body_unicode = request.body.decode('utf-8')
-    body = json.loads(body_unicode)
+    if request.method == 'POST':
+        form = EmailSignupForm(request.POST)
 
-    print(body)
-    form = EmailSignupForm(request.POST or None)
-    subscribe(form.instance.email)
-    # if request.method == "POST":
-    #     if form.is_valid():
-    #         email_signup_qs = Signup.objects.filter(email=form.instance.email)
-    #         if email_signup_qs.exists():
-    #             messages.info(request, "You are already subscribed")
-    #         else:
-    #             subscribe(form.instance.email)
-    #             form.save()
+        if form.is_valid():
+            email = request.POST.get('email')
+            response = subscribe(email)
+            if response['subscription'] and response['subscription']['state'] == 'inactive':
+                messages.info(
+                    request, "Subscribed, please confirm your email.")
+            elif response['subscription'] and response['subscription']['state'] == 'active':
+                messages.info(
+                    request, "Already subscribed, thanks for trying again!")
+            else:
+                messages.info(
+                    request, "Something went wrong, please try again.")
+
     return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
