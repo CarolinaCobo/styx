@@ -35,8 +35,6 @@ ___
 
 * [**Credits**](#credits)
 
-* [**Final Notes**](#final*notes)
-
 * [**Acknowledgements**](#acknowledgements)
   
 ___
@@ -52,11 +50,11 @@ This project is for educational purposes only.
 
 | Opportunity/Problem                                                    | Importance | Viability/Feasibility |
 | :--------------------------------------------------------------------- | :--------: | :-------------------: |
-| A. Users are able to register an account and login                     |     5      |           5           |
-| B. Users can add, edit and remove items from their shopping bag        |     5      |           5           |
-| C. Users are notified of their actions while interacting with the site |     5      |           4           |
-| D. Users can search for products by keyworkds                          |     4      |           4           |
-| E. Users can sign up to the newsletter                                 |     3      |           4           |
+| 1. Users are able to register an account and login                     |     5      |           5           |
+| 2. Users can add, edit and remove items from their shopping bag        |     5      |           5           |
+| 3. Users are notified of their actions while interacting with the site |     5      |           4           |
+| 4. Users can search for products by keyworkds                          |     4      |           4           |
+| 5. Users can sign up to the newsletter                                 |     3      |           4           |
 
 ## User stories
 
@@ -366,7 +364,7 @@ The same structure can be found in the different apps across the site.
 * Grand Total  
   * The sum of the total of all the items in the bag and delivery charge. This is the amount the users will be charged in their cards. 
 
-### Features on the Checkout Page * 
+### Features on the Checkout Page 
 
 * Form Fields 
   * Follow same structures and form validation. 
@@ -405,14 +403,24 @@ The same structure can be found in the different apps across the site.
 
 Those fields are for a referrence only, can't be adjusted by the user.
 
+### Features on the Subscription navbar
 
-## Future features to implement.
+* The user can subscribe to the page.
+* The user have an input box and a button to subscribe.
+* Toast message will appear depending on the status of the user subscription:
+  * New subscriptor, they have to confirm their email address.
+  * Already subscribed.
+  * Error while subscribing.
+
+
+## Future features 
 
 * Error Pages
 * Blog available for not registered users. 
 * Confirm Deletion Modal
 * Returns
-* Social media log in.
+* Social media log in
+* Add new post from Admin loggin in.
 
 ## Bugs and Fixes 
 
@@ -424,13 +432,10 @@ Those fields are for a referrence only, can't be adjusted by the user.
 
 * [Gunicorn 20.0.4:](https://docs.gunicorn.org/en/stable/) Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX. The Gunicorn server is broadly compatible with 
 various web frameworks, simply implemented, light on server resources, and fairly speedy.
-
 * [Pillow 4.3.0:](https://pillow.readthedocs.io/en/stable/handbook/overview.html) The Python Imaging Library adds image processing capabilities to your Python interpreter. This library provides
 extensive file format support, an efficient internal representation, and fairly powerful image processing capabilities. 
-
 * [Psycopg2 2.8.5:](https://pypi.org/project/psycopg2/) Psycopg is the most popular PostgreSQL database adapter for the Python programming language. Its main features are 
 the complete implementation of the Python DB API 2.0 specification and the thread safety.
-
 * [boto3 1.14.5:](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html) Boto is the Amazon Web Services (AWS) SDK for Python. It enables Python developers to create, configure, and manage AWS 
 services, such as EC2 and S3. 
 
@@ -441,19 +446,20 @@ services, such as EC2 and S3.
 * [CSS3](https://www.w3schools.com/css/) - to style the page, and fix media queries and the max width.
 * [JavaScript](https://www.javascript.com/) - to add interactions with the page.
 * [JQuery:](https://jquery.com/) 
-* [Jinja:](https://jinja.palletsprojects.com/) 
 * [Bson and Json:](https://www.mongodb.com/json-and-bson)
 
-## Libraries -
+## Libraries 
 
 * [Bootstrap3:](https://getbootstrap.com/)
 * [Font Awesome:](https://fontawesome.com/) Icons accross the page.
 * [Google Fonts:](https://fonts.google.com/) Font Library 
 
-## API's - 
+## API's 
 
 * [Django:](https://www.djangoproject.com/)
 * [Stripe:](https://stripe.com/gb) Payment handling
+* [Converkit](https://app.convertkit.com/) handle subscriptions.
+
 
 ## Email
 
@@ -465,7 +471,7 @@ services, such as EC2 and S3.
 * [sqLite3:](https://www.sqlite.org/)
 * [AWS S3:](https://aws.amazon.com/)
 
-## Tools -
+## Tools 
 * [VSCode](https://code.visualstudio.com/) - used as IDE for the project.
 * [Git](https://git-scm.com/) - used for version control.
 * [Github](https://github.com/) - used to host repository and to generate the live website.
@@ -476,7 +482,7 @@ services, such as EC2 and S3.
 * [Django Secret Key Generator:](https://miniwebtool.com/django-secret-key-generator/) Generates Django secret keys 
 * [Chrome DevTools:](https://developers.google.com/web/tools/chrome-devtools) 
 
-* **W3C Markup Validation Service:** Used to run all html and css code through a validation process looking for errors 
+* **W3C Markup Validation Service:** Used to run all html and css code  
   * [HTML](https://validator.w3.org/) 
   * [CSS](https://jigsaw.w3.org/css-validator/validator)
 
@@ -488,33 +494,25 @@ It can be found [here](./TESTING.md)
 
 ## Validation of Code Testing 
 
-## HTML 
 
-All Pages tested using [W3C](https://validator.w3.org/nu/) HTML Validator - No warnings or Errors.
+|  Tested   |                           Link                            | Warning/Errors |
+| :-------: | :-------------------------------------------------------: | :------------: |
+|   HTML    |    [W3C Html validator](https://validator.w3.org/nu/)     |       No       |
+|    CSS    | [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) |       No       |
+| JavaScipt |               [JSHint](https://jshint.com/)               |       No       |
+|  Python   |              [PEP8](http://pep8online.com/)               |       No       |
 
-## CSS 
-
-All Pages tested using [W3C](https://jigsaw.w3.org/css-validator/) CSS Validator - No warnings or Errors.
-
-## Javascript 
-
-All JS and JQuery tested using [JSHint](https://jshint.com/) Javascript Validator - No Errors.
-
-## Python 
-
-All Python tested using [PEP8](http://pep8online.com/) Python Validator - No warnings or Errors.
-
-## Deployment
 
 ### Local Deployment
 
 To be able to clone this project there are a few things you will need.
 
-- [Git](https://git-scm.com/) - Install Git, installation docs and be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [Pip](https://pip.pypa.io/en/stable/installing/) - install pip, installation docs can be found [here](https://pip.pypa.io/en/stable/installing/)
-- A [Gmail](https://www.gmail.com/mail/help/intl/en/about.html?utm_expid=...) account with app secret key.
+* [Git](https://git-scm.com/) - Install Git, installation docs and be found [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Pip](https://pip.pypa.io/en/stable/cli/pip_install/) - install pip, installation docs can be found [here](https://pip.pypa.io/en/stable/cli/pip_install/)
+* [Gmail](https://www.google.com/gmail/about/) account with app secret key.
+* [Converkit](https://app.convertkit.com/) handle subscriptions.
 
-Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stable/installing/) installed.
+Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stable/cli/pip_install/) installed.
 
 1. From the terminal create the directory you want to work in.
 
@@ -558,16 +556,19 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 
 8. In focus folder make a `.env` file and add the variables below.
 
-   | Key                 |      Value      |
-   | ------------------- | :-------------: |
-   | SECRET_KEY          | < Your Values > |
-   | EMAIL_HOST_PASS     | < Your Values > |
-   | EMAIL_HOST_USER     | < Your Values > |
-   | NOTIFY_EMAIL        | < Your Values > |
-   | DEFAULT_FROM_EMAIL  | < Your Values > |
-   | STRIPE_PUBLIC_KEY   | < Your Values > |
-   | STRIPE_SECRET_KEY   | < Your Values > |
-   | STRIPE_SECSTRIPE_WH | < Your Values > |
+   | Key                   |      Value      |
+   | --------------------- | :-------------: |
+   | SECRET_KEY            | < Your Values > |
+   | STRIPE_PUBLIC_KEY     | < Your Values > |
+   | STRIPE_SECRET_KEY     | < Your Values > |
+   | STRIPE_WH_SECRET      | < Your Values > |
+   | AWS_ACCESS_KEY_ID     | < Your Values > |
+   | AWS_SECRET_ACCESS_KEY | < Your Values > |
+   | EMAIL_HOST_PASS       | < Your Values > |
+   | DATABASE_URL          | < Your Values > |
+   | SECRET_KEY            | < Your Values > |
+
+
 
 9. Install all the requirements needed to run the project.
 
@@ -723,7 +724,7 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 20. You are ready to push to Heroku
 
     ```bash
-    $ git push heroku master
+    $ git push heroku main
     ```
 
 21. When your app is deployed successfully. Click _Open App_ in to top right hand corner of Heroku to open app in a new tab in the browser.
@@ -738,11 +739,8 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 
 ## Media 
 
-1. Images - [JD Sports](https://www.jdsports.ie/)
-2. Responsive Image - [Am-I-Responsive](http://ami.responsivedesign.is/)
-3. Tutorial Videos
-4. Icons and Buttons 
-
+* Images - [JD Sports](https://www.jdsports.ie/)
+* Responsive Image - [Am-I-Responsive](http://ami.responsivedesign.is/)
 * [Font-Awesome](https://fontawesome.com/)
 
 ## Acknowledgements

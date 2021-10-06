@@ -10,7 +10,7 @@ html {
 
 body {
   height: calc(100vh - 164px);
-  /* min-height: 100vh; */
+  min-height: 100vh;
   color: var(--black);
   font-family: "DM Sans", sans-serif;
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .bg-black {
-  background: grey !important;
+  background: rgb(162, 161, 161) !important;
 }
 
 .border-radius-button {
@@ -126,15 +126,28 @@ input[name='q']::placeholder {
 
 
 #delivery-banner {
-  height: 60px;
+  height: 30px;
 }
 
 #delivery-banner h4 {
   margin: auto;
-  width: 50%;
-  padding: 30px;
+  padding: 15px;
+  font-size: large;
 }
 
+
+input[type=email] {
+  width: 250px;
+  border:gray;
+  padding: 7px;
+}
+
+.contact-link {
+  padding-bottom: 20px;
+}
+.contact-link > a {
+  color:#fff;
+}
 /************ bootstrap toasts */
 
 .message-container {
@@ -304,12 +317,12 @@ input[name='q']::placeholder {
 
 
 
-.footer{
-  position: fixed;
+.page-footer{
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
+  
 }
 
 /* fixed top navbar only on medium and up */

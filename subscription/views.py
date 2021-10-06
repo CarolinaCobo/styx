@@ -29,9 +29,9 @@ def subscribe(email):
 
 def email_list_signup(request):
     if request.method == 'POST':
-        form = EmailSignupForm(request.POST)
+        signUpForm = EmailSignupForm(request.POST)
 
-        if form.is_valid():
+        if signUpForm.is_valid():
             email = request.POST.get('email')
             response = subscribe(email)
             if response['subscription'] and response['subscription']['state'] == 'inactive':
