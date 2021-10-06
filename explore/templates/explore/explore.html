@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block page_header %}
-<!-- Push Content Down Page -->
 <div class="container header-container">
     <div class="row">
         <div class="col">
@@ -13,8 +12,6 @@
 {% endblock %}
 
 {% block content %}
-
-<!-- Explore Post -->
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
@@ -27,7 +24,6 @@
             <div class="row mt-1 mb-0">
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
-                        <!-- Explore Counter -->
                         <span class="small"><a href="{% url 'view_explore' %}" class="link-button">All Explore Posts</a>
                             | </span>
                         {{ posts|length }} Posts
@@ -56,18 +52,15 @@
         </div>
         <div class="col-12 col-md-6 col-lg-4">
             <div class="mb-5 mt-md-5 pl-3 pr-3">
-                <!-- Get Explore Title -->
                 <a href="{% url 'explore_detail' post.id %}" class="name-link">
                     <p class="lead mb-3 font-weight-bold">{{ post.post_title }}</p>
                 </a>
                 <hr>
-                <!-- Get Explore Author -->
                 <p class="mb-0 text-left">{{ post.post_author }}</p>
                 <small class="text-muted">{{ post.post_date_posted|date:'F d, Y' }}</small>
             </div>
         </div>
     </div>
-    <hr>
     {% endfor %}
 </div>
 {% endblock %}
