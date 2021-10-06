@@ -15,6 +15,10 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+
+.text-primary {
+  color: #17a2b8!important;
+}
 /* from Bulma */
 .icon {
   align-items: center;
@@ -84,7 +88,7 @@ body {
 }
 
 .bg-black {
-  background: rgb(162, 161, 161) !important;
+  background: var(--black) !important;
 }
 
 .border-radius-button {
@@ -102,7 +106,7 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
+    /* background: #212529 !important; */
     color: #fff !important;
 }
 
@@ -112,6 +116,7 @@ a.category-badge > span.badge:hover {
     position: fixed;
     bottom: 10px;
     right: 10px;
+    background-color: #17a2b8;
 }
 
 .btt-link,
@@ -127,12 +132,24 @@ input[name='q']::placeholder {
 
 #delivery-banner {
   height: 30px;
+  background-color: #17a2b8;
 }
 
 #delivery-banner h4 {
   margin: auto;
   padding: 15px;
   font-size: large;
+  background-color: #17a2b8;
+
+}
+
+#signupButton {
+  background-color: #17a2b8 !important;
+  color: #fff;
+}
+
+#newsletter-banner {
+  padding-top: 10px;
 }
 
 
@@ -175,11 +192,13 @@ input[type=email] {
   position: absolute;
   top: -10px;
   right: 36px;
+  background-color: #17a2b8;
+
 }
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-  border-bottom-color: #007bff !important;
+  border-bottom-color: #17a2b8 !important;
 }
 
 .arrow-secondary {
@@ -216,7 +235,7 @@ input[type=email] {
   overflow-y: auto;
 }
 
-/************ Media Queries */
+/**************************************************** Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -286,7 +305,9 @@ input[type=email] {
 	color: #17a2b8; /* text-info */
 }
 
-
+a {
+  color: #17a2b8;
+}
 /* Product Form */
 
 .btn-file {
