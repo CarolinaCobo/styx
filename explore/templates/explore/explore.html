@@ -12,9 +12,9 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid borde">
     <div class="row">
-        <div class="col text-center mt-3">
+        <div class="col text-center">
             <h2>Explore</h2>
             <hr>
         </div>
@@ -32,35 +32,36 @@
             </div>
         </div>
     </div>
+
     {% for post in posts %}
-    <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-            <!-- Get 'Explore Image' or 'No Image' Image -->
-            <div class="my-5 pl-3 pr-3">
+    <div class="card mb-4 mx-auto border-radius-button" style="max-width: 80%;">
+        <div class="row g-0">
+            <div class="col-md-4">
                 {% if post.image %}
                 <a href="{% url 'explore_detail' post.id %}">
-                    <img class="card-img-top img-fluid explore border-blue" src="{{ post.image.url }}"
-                        alt="{{ post.post_title }}">
+                    <img src="{{ post.image.url }}" class="img-fluid rounded-start" alt="{{ post.post_title }}">
                 </a>
                 {% else %}
                 <a href="{% url 'explore_detail' post.id %}">
-                    <img class="card-img-top img-fluid explore border-blue" src="{{ MEDIA_URL }}noimage.png"
-                        alt="{{ post.post_title }}">
+                    <img class="img-fluid rounded-start" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.post_title }}">
                 </a>
                 {% endif %}
             </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4">
-            <div class="mb-5 mt-md-5 pl-3 pr-3">
-                <a href="{% url 'explore_detail' post.id %}" class="name-link">
-                    <p class="lead mb-3 font-weight-bold">{{ post.post_title }}</p>
-                </a>
-                <hr>
-                <p class="mb-0 text-left">{{ post.post_author }}</p>
-                <small class="text-muted">{{ post.post_date_posted|date:'F d, Y' }}</small>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <a href="{% url 'explore_detail' post.id %}">
+                        <h5 class="card-title">{{ post.post_title }}</h5>
+                    </a>
+                    <p class="card-text"><cite>
+                            {{ post.post_author }}</p>
+                    </cite>
+                    <p class="card-text"><small class="text-muted">Last updated
+                            {{ post.post_date_posted|date:'F d, Y' }}</small></p>
+                </div>
             </div>
         </div>
     </div>
+
     {% endfor %}
 </div>
 {% endblock %}

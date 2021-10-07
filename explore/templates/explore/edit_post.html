@@ -17,7 +17,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-12 col-md-6 offset-md-3">
-            <h2 class="mb-4 text-center mt-3">Product Management</h2>
+            <h2 class="mb-4 text-center mt-3">Explore Management</h2>
             <h5 class="text-muted text-center">Edit a Explore Post</h5>
             <hr>
         </div>
@@ -35,8 +35,8 @@
                 {% endif %}
                 {% endfor %}
                 <div class="text-right">
-                    <a class="btn rounded-5 link-button" href="{% url 'explore_detail' post.id %}">Cancel</a>
-                    <button class="btn rounded-5 continue-button" type="submit">Edit Post</button>
+                    <a class="btn border-radius-button link-button" href="{% url 'explore_detail' post.id %}">Cancel</a>
+                    <button class="btn border-radius-button continue-button" type="submit">Edit Post</button>
                 </div>
             </form>
         </div>

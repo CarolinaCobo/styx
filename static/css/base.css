@@ -337,13 +337,16 @@ a {
 }
 
 
-
 .page-footer{
   bottom: 0px;
   left: 0px;
   right: 0px;
   margin-bottom: 0px;
   
+}
+
+.card-img-top {
+  max-height: 600px;
 }
 
 /* fixed top navbar only on medium and up */
