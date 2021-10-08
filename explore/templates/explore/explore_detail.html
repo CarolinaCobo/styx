@@ -27,7 +27,7 @@
             <h5 class="card-title mt-5">{{ post.post_title }}</h5>
             <p class="card-text">{{ post.post_content }}</p>
             <p class="card-text"><small class="text-muted">{{ post.post_date_posted|date:'F d, Y' }}</small></p>
-            {% if request.user.is_superuser %}
+            {% if post.post_author == user or request.user.is_superuser %}
             <div class="block mt-2">
                 <small>
                     <a href="{% url 'edit_post' post.id %}">Edit</a>
