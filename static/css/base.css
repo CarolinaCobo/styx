@@ -146,6 +146,8 @@ input[name='q']::placeholder {
 #signupButton {
   background-color: #17a2b8 !important;
   color: #fff;
+  border: solid #17a2b8;
+
 }
 
 #newsletter-banner {
@@ -153,10 +155,11 @@ input[name='q']::placeholder {
 }
 
 
+
 input[type=email] {
-  width: 250px;
+  width: 240px;
   border:gray;
-  padding: 7px;
+  border-radius: 8px 0 0 8px !important;
 }
 
 .contact-link {
@@ -308,8 +311,10 @@ input[type=email] {
 a {
   color: #17a2b8;
 }
-/* Product Form */
 
+
+
+/* Product Form */
 .btn-file {
   position: relative;
   overflow: hidden;
@@ -347,6 +352,25 @@ a {
 
 .card-img-top {
   max-height: 600px;
+}
+
+
+
+.homepage-image {
+  background-image: url('/media/homepage.jpeg');
+  background-size: cover;
+  background-position: center;
+
+}
+
+.hero-text {
+  color: #fff;
+}
+
+.background-opacity {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 /* fixed top navbar only on medium and up */
