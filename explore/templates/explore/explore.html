@@ -52,10 +52,12 @@
                     <a href="{% url 'explore_detail' post.id %}">
                         <h5 class="card-title">{{ post.post_title }}</h5>
                     </a>
-                    <p class="card-text"><cite>
-                            {{ post.post_author }}</p>
-                    </cite>
-                    <p class="card-text"><small class="text-muted">Last updated
+                    <p>
+                        <cite>
+                            {{ post.post_author }}
+                        </cite>
+                    </p>
+                    <p><small class="text-muted">Last updated
                             {{ post.post_date_posted|date:'F d, Y' }}</small></p>
                 </div>
             </div>

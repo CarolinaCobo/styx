@@ -15,6 +15,9 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
+hr {
+  opacity: 0;
+}
 
 .text-primary {
   color: #17a2b8!important;
@@ -155,8 +158,7 @@ input[name='q']::placeholder {
 }
 
 
-
-input[type=email] {
+ input[name=signup-email] {
   width: 240px;
   border:gray;
   border-radius: 8px 0 0 8px !important;

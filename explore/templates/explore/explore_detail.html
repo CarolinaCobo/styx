@@ -1,7 +1,5 @@
 {% extends "base.html" %}
-
 {% load static %}
-
 {% load crispy_forms_tags %}
 
 {% block page_header %}
@@ -19,9 +17,13 @@
 <div class="container-sm">
     <div class="card border-0 mb-3">
         {% if post.image %}
-        <img src="{{ post.image.url }}" class="card-img-top" alt="{{ post.post_title }}>
+        <a href="{{ post.image.url }}" target="_blank">
+            <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.post_title }}">
+        </a>
         {% else %}
-        <img src=" {{ MEDIA_URL }}noimage.png" class="card-img-top" alt="{{ post.post_title }}">
+        <a href="">
+            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.post_title }}">
+        </a>
         {% endif %}
         <div class="card-body">
             <h5 class="card-title mt-5">{{ post.post_title }}</h5>
@@ -35,7 +37,6 @@
                 </small>
             </div>
             {% endif %}
-
         </div>
     </div>
 </div>

@@ -35,8 +35,9 @@
                 {% endif %}
                 {% endfor %}
                 <div class="text-right">
-                    <a class="btn border-radius-button link-button" href="{% url 'explore_detail' post.id %}">Cancel</a>
-                    <button class="btn border-radius-button continue-button" type="submit">Edit Post</button>
+                    <a class="btn btn-outline-black border-radius-button"
+                        href="{% url 'explore_detail' post.id %}">Cancel</a>
+                    <button class="btn btn-black border-radius-button" type="submit">Edit Post</button>
                 </div>
             </form>
         </div>
@@ -44,8 +45,12 @@
 </div>
 {% endblock %}
 
-{% block postload_js %}
+{% block postloadjs %}
 {{ block.super }}
-<!-- Current Image JS -->
-{% include 'explore/includes/js/current_image_js.html' %}
+<script>
+    $('#new-image').change(function () {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}
