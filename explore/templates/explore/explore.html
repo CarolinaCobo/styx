@@ -24,7 +24,9 @@
             <div class="row mt-1 mb-0">
                 <div class="col-12 col-md-6 order-md-first">
                     <p class="text-muted mt-3 text-center text-md-left">
-                        <span class="small"><a href="{% url 'view_explore' %}" class="link-button">All Explore Posts</a>
+                        <span class="small">
+                            <a href="{% url 'view_explore' %}" class="link-button styled-link">
+                                All Explore Posts</a>
                             | </span>
                         {{ posts|length }} Posts
                     </p>
@@ -49,7 +51,7 @@
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <a href="{% url 'explore_detail' post.id %}">
+                    <a class="styled-link" href="{% url 'explore_detail' post.id %}">
                         <h5 class="card-title">{{ post.post_title }}</h5>
                     </a>
                     <p>

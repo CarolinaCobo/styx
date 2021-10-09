@@ -2,10 +2,12 @@
 
 View a live version of the site [here](https://gamer*supplies.herokuapp.com).
 
-I have created this project (Milestone project 4) as part of my Full Stack Web Development course with [Code Institute](https://codeinstitute.net/).
+This project has been created for educational purposes.
 
-It is an E*Commerce site for a fictional company 'Gamer Supplies' which offers a variety of snacks for sale.
+It is an E-Commerce site for a fictional company 'Gamer Supplies' which offers a variety of snacks for sale.
 
+
+![Responsive](./media/wireframes/responsive.png)
 ___
 
 ##  Contents
@@ -18,9 +20,8 @@ ___
   * [User Stories](<#user*stories>)
   * [Website Structure](<#website*structure>)
   * [Design](<#design>)
-    * Colour Scheme
-    * Images
-    * Typography
+    * Colours
+    * Font
   * [Wireframes](<#wireframes>)
  
 * [**Database Schema**](<#database*schema>)
@@ -125,9 +126,13 @@ The final result is slightly different as during the development stage the way t
 
 ### Colours
 
-### Fonts
+The palette of colors for the site is simple, the main color is a shade of black
 
-### Favicon
+![Color-palette](./media/wireframes/palette.png)
+
+### Font
+
+The entire site has the same fonts for logo and texts. The font is "DM Sans" and when that font is not available on the browser it's sans-serif.
 
 
 # Database Schema 
@@ -420,7 +425,6 @@ Those fields are for a referrence only, can't be adjusted by the user.
 * Confirm Deletion Modal
 * Returns
 * Social media log in
-* Add new post from Admin loggin in.
 
 ## Bugs and Fixes 
 
@@ -556,17 +560,17 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 
 8. In focus folder make a `.env` file and add the variables below.
 
-   | Key                   |      Value      |
-   | --------------------- | :-------------: |
-   | SECRET_KEY            | < Your Values > |
-   | STRIPE_PUBLIC_KEY     | < Your Values > |
-   | STRIPE_SECRET_KEY     | < Your Values > |
-   | STRIPE_WH_SECRET      | < Your Values > |
-   | AWS_ACCESS_KEY_ID     | < Your Values > |
-   | AWS_SECRET_ACCESS_KEY | < Your Values > |
-   | EMAIL_HOST_PASS       | < Your Values > |
-   | DATABASE_URL          | < Your Values > |
-   | SECRET_KEY            | < Your Values > |
+   | Key                   |   Value    |
+   | --------------------- | :--------: |
+   | SECRET_KEY            | < Values > |
+   | STRIPE_PUBLIC_KEY     | < Values > |
+   | STRIPE_SECRET_KEY     | < Values > |
+   | STRIPE_WH_SECRET      | < Values > |
+   | AWS_ACCESS_KEY_ID     | < Values > |
+   | AWS_SECRET_ACCESS_KEY | < Values > |
+   | EMAIL_HOST_PASS       | < Values > |
+   | DATABASE_URL          | < Values > |
+   | SECRET_KEY            | < Values > |
 
 
 
@@ -621,7 +625,7 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 6.  Pick a server location that is closest to you.
 7.  Once the app is created click on the resources button and choose the Heroku Postgres to attach a postgres database to your project.
 8.  To be able to run on Heroku A few more libraries are needed.
-    [Guniorn](https://gunicorn.org/) a (WSGI HTTP Server), [dj-databas-url](https://pypi.org/project/dj-database-url/) to connect with PostgreSQL and [Psycopg](https://www.psycopg.org/)(PostgreSQL adapter)
+    [Gunicorn](https://gunicorn.org/) a (WSGI HTTP Server), [dj-databas-url](https://pypi.org/project/dj-database-url/) to connect with PostgreSQL and [Psycopg](https://www.psycopg.org/)(PostgreSQL adapter)
 
         ```bash
         $ pip install Gunicorn, dj-database, Psycopg
@@ -655,11 +659,11 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 
 13. Enter in all your AWS variables as well as all your `.env` variables into Heroku's Config Vars.
 
-    | Key                   |      Value      |
-    | --------------------- | :-------------: |
-    | AWS_SECRET_ACCESS_KEY | < Your Values > |
-    | AWS_ACCESS_KEY_ID     | < Your Values > |
-    | USE_AWS               |      True       |
+    | Key                   |   Value    |
+    | --------------------- | :--------: |
+    | AWS_SECRET_ACCESS_KEY | < Values > |
+    | AWS_ACCESS_KEY_ID     | < Values > |
+    | USE_AWS               |    True    |
 
 
 14. In your Terminal. Navigate to your directory.
@@ -698,8 +702,8 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 
         ```python
         if 'USE_AWS' in os.environ:
-            AWS_STORAGE_BUCKET_NAME = < Your Bucket Name >
-            AWS_S3_REGION_NAME = < Your server location >
+            AWS_STORAGE_BUCKET_NAME = < Bucket Name >
+            AWS_S3_REGION_NAME = < server location >
             AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
             AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
             AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
@@ -733,9 +737,9 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 
 ## Content 
 
-1. Products info and pictures - [JD Sports](https://www.jdsports.ie/)
-2. Wireframes - [Balsamiq](https://balsamiq.com/wireframes/)
-3. Data Schema - [DBDiagram](https://dbdiagram.io)
+* Products info and pictures - [JD Sports](https://www.jdsports.ie/)
+* Wireframes - [Balsamiq](https://balsamiq.com/wireframes/)
+* Data Schema - [DBDiagram](https://dbdiagram.io)
 
 ## Media 
 
@@ -745,8 +749,9 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 
 ## Acknowledgements
 
-I received inspiration for this project from:
+### I received inspiration for this project from:
 
+* [Boutique Ado](https://github.com/ckz8780/ci-fsf-hello-django/tree/c13b414fd2e87a54b4f2788ceffec55be4ade925)
 * [MDN Documentation](https://developer.mozilla.org/en-US/)
 * [JD Sports](https://www.jdsports.ie/)
 * [Nike](https://www.nike.ie/)
@@ -762,11 +767,3 @@ I received inspiration for this project from:
 * [Codú Community](https://discord.com/invite/NxSkYtZ)
 * My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/)
 * Code Institute [Slack Community](code-institute-room.slack.com)
-
-
-
-
-
-
-
-

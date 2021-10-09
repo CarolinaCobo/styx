@@ -61,7 +61,7 @@ hr {
 .btn-outline-black {
   background: white;
   color: var(--black) !important;
-  border: 1px solid black;
+  border: 1px solid var(--black);
 }
 
 .shop-now-button:hover,
@@ -71,7 +71,11 @@ hr {
 .btn-black:active,
 .btn-black:focus {
   background: var(--black);
-  color: white;
+  color: #fff;
+}
+
+.dropdown-item:active {
+  background-color: #17a2b8 !important;
 }
 
 .text-black {
@@ -108,8 +112,20 @@ hr {
   z-index: -1;
 }
 
+.styled-link {
+  color: #17a2b8;
+  text-decoration: none;
+}
+
+.styled-link:hover {
+  color: var(--black);
+  text-decoration: none;
+
+}
+
+
 a.category-badge > span.badge:hover {
-    /* background: #212529 !important; */
+    background: #212529 !important;
     color: #fff !important;
 }
 
@@ -302,8 +318,8 @@ input[name='q']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color:vat;
-    border-color: #222;
+    background-color: var(--black);
+    border-color: var(--black);
 }
 
 .allauth-form-inner-content a {
@@ -371,6 +387,11 @@ a {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+a.text-primary:focus, a.text-primary:hover {
+  color: var(--black)!important;
 }
 
 /* fixed top navbar only on medium and up */

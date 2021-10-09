@@ -18,6 +18,8 @@ def subscribe(email):
         'api_key': settings.CONVERKIT_API_KEY,
         'email': email,
     }
+
+    print(newData)
     headers = {'Content-type': 'application/json'}
 
     r = requests.post(
@@ -29,11 +31,13 @@ def subscribe(email):
 
 def email_list_signup(request):
     if request.method == 'POST':
-        signUpForm = EmailSignupForm(request.POST)
+        signUpForm = EmailSignupForm(request.POST or None)
 
         if signUpForm.is_valid():
             email = request.POST.get('email')
             response = subscribe(email)
+            print("here_______")
+            print(response)
             if response['subscription'] and response['subscription']['state'] == 'inactive':
                 messages.info(
                     request, "Subscribed, please confirm your email.")
@@ -43,5 +47,4 @@ def email_list_signup(request):
             else:
                 messages.info(
                     request, "Something went wrong, please try again.")
-
     return HttpResponseRedirect(request.META.get("HTTP_REFERER"))
