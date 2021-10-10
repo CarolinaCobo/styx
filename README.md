@@ -467,7 +467,7 @@ services, such as EC2 and S3.
 
 ## Email
 
- [Gmail:](https://www.google.com/intl/enuk/gmail/) Google mail; The process of sending and receiving electronic messages that may contain text, graphics, images or videos 
+[Gmail](https://www.google.com/intl/enuk/gmail/): The process of sending and receiving electronic messages that may contain text, graphics, images or videos 
 
 ## Database
 
@@ -499,12 +499,12 @@ It can be found [here](./TESTING.md)
 ## Validation of Code Testing 
 
 
-|  Tested   |                           Link                            | Warning/Errors |
-| :-------: | :-------------------------------------------------------: | :------------: |
-|   HTML    |    [W3C Html validator](https://validator.w3.org/nu/)     |       No       |
+|  Tested   | Link                                                      | Warning/Errors |
+| :-------: | --------------------------------------------------------- | :------------: |
+|   HTML    | [W3C Html validator](https://validator.w3.org/nu/)        |       No       |
 |    CSS    | [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) |       No       |
-| JavaScipt |               [JSHint](https://jshint.com/)               |       No       |
-|  Python   |              [PEP8](http://pep8online.com/)               |       No       |
+| JavaScipt | [JSHint](https://jshint.com/)                             |       No       |
+|  Python   | [PEP8](http://pep8online.com/)                            |       No       |
 
 
 ### Local Deployment
