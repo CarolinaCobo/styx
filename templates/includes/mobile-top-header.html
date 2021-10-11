@@ -1,4 +1,5 @@
 <ul>
+    <!-- Search functionality -->
     <li class="list-inline-item">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -28,6 +29,7 @@
             </form>
         </div>
     </li>
+    <!-- My account -->
     <li class="list-inline-item dropdown">
         <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
@@ -41,6 +43,7 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
+        <!-- Account dropdown -->
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
@@ -55,6 +58,7 @@
             {% endif %}
         </div>
     </li>
+    <!-- Bag element -->
     <li class="list-inline-item">
         <a class="{% if grand_total %} text-primary {% else %} text-black {% endif %} nav-link d-block d-lg-none"
             href="{% url 'view_bag' %}">

@@ -19,11 +19,12 @@
             <hr>
         </div>
     </div>
+    <!-- All posts link and posts count  -->
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row mt-1 mb-0">
                 <div class="col-12 col-md-6 order-md-first">
-                    <p class="text-muted mt-3 text-center text-md-left">
+                    <p class="text-muted mt-3 text-center">
                         <span class="small">
                             <a href="{% url 'view_explore' %}" class="link-button styled-link">
                                 All Explore Posts</a>
@@ -36,7 +37,7 @@
     </div>
 
     {% for post in posts %}
-    <div class="card mb-4 mx-auto border-radius-button" style="max-width: 80%;">
+    <div class="card mb-4 mx-auto border-radius-button" style="max-width: 60%;">
         <div class="row g-0">
             <div class="col-md-4">
                 {% if post.image %}
