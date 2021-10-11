@@ -428,7 +428,9 @@ Those fields are for a referrence only, can't be adjusted by the user.
 
 ## Bugs and Fixes 
 
-** do this **
+The issues found have been tracked on Github directly and can be found [here](https://github.com/CarolinaCobo/styx/issues?q=is%3Aissue+is%3Aclosed).
+
+Inside each one of them there's information or screenshots showing what the error was and solved linking them to the commit where they were fixed. 
 
 # Technologies Used
 
@@ -746,6 +748,8 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 * Images - [JD Sports](https://www.jdsports.ie/)
 * Responsive Image - [Am-I-Responsive](http://ami.responsivedesign.is/)
 * [Font-Awesome](https://fontawesome.com/)
+* [Pixabay](https://pixabay.com/)
+* [Unsplash](https://unsplash.com/)
 
 ## Acknowledgements
 
@@ -760,6 +764,7 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 * [StackOverflow](https://stackoverflow.com/)
 * [Codú Community](https://www.youtube.com/channel/UCvI5azOD4eDumpshr00EfIw)
 * [FreeCodeCamp](https://www.freecodecamp.org/)
+* Code Institute fellow students finished projects. 
 
 ### I received advice and support from
 
