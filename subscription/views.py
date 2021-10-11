@@ -7,7 +7,7 @@ from subscription.models import Signup
 import json
 import requests
 
-url = 'https://api.convertkit.com/v3/forms/2632824/subscribe'
+url = 'https://api.convertkit.com/v3/forms/2675660/subscribe'
 
 
 def subscribe(email):
