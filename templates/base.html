@@ -47,7 +47,7 @@
     <title>Styx {% block extra_tittle %}{% endblock %} </title>
 </head>
 
-<body>
+<body class="d-flex flex-column h-100">
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -167,10 +167,10 @@
     {% endblock %}
 
 
-    <footer class="page-footer bg-black">
+    <footer class="footer mt-auto bg-black">
         <div id="delivery-banner" class="text-center">
             <div class="text-white">
-                <h4 class="my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+                <h4>Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
             </div>
         </div>
         <hr>
