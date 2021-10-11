@@ -289,7 +289,7 @@ The same will be displayed accoss the different sections:
     * Post buttons
 
 
-### Features on the Profile Page * 
+### Features on the Profile Page  
 
 * Delivery Information Form 
   * This form shows the user's default delivery information. 
@@ -420,17 +420,12 @@ Those fields are for a referrence only, can't be adjusted by the user.
 
 ## Future features 
 
-* Error Pages
+* Pagination
 * Blog available for not registered users. 
 * Confirm Deletion Modal
 * Returns
 * Social media log in
 
-## Bugs and Fixes 
-
-The issues found have been tracked on Github directly and can be found [here](https://github.com/CarolinaCobo/styx/issues?q=is%3Aissue+is%3Aclosed).
-
-Inside each one of them there's information or screenshots showing what the error was and solved linking them to the commit where they were fixed. 
 
 # Technologies Used
 
@@ -498,18 +493,9 @@ services, such as EC2 and S3.
 
 It can be found [here](./TESTING.md)
 
-## Validation of Code Testing 
 
-
-|  Tested   | Link                                                      | Warning/Errors |
-| :-------: | --------------------------------------------------------- | :------------: |
-|   HTML    | [W3C Html validator](https://validator.w3.org/nu/)        |       No       |
-|    CSS    | [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) |       No       |
-| JavaScipt | [JSHint](https://jshint.com/)                             |       No       |
-|  Python   | [PEP8](http://pep8online.com/)                            |       No       |
-
-
-### Local Deployment
+# Deployment 
+## Local Deployment
 
 To be able to clone this project there are a few things you will need.
 
@@ -613,7 +599,7 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
     ```
 
 
-### Heroku Deployment
+## Heroku Deployment
 
 Fisrtly, it's required to have an [AWS](https://aws.amazon.com/s3/) account and a [S3 bucket](https://aws.amazon.com/s3/) to hold all the static files for this project.
 If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/latest/) socialaccounts logins, you can find out more here. [Facebook](https://developers.facebook.com/products/facebook-login/) and [Google](https://developers.google.com/identity/sign-in/web/sign-in)

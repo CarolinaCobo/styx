@@ -1,4 +1,4 @@
-# Styx - Testing
+ # Styx - Testing
 
 [View the live project here.](https://styx-shoes.herokuapp.com/)
 
@@ -9,11 +9,11 @@
   - [Table of Contents](#table-of-contents)
   - [Code Validation](#code-validation)
   - [Validation Services](#validation-services)
+  - [Validation of Code Testing](#validation-of-code-testing)
   - [Manual Testing](#manual-testing)
     - [Devices and browsers](#devices-and-browsers)
     - [Features tested](#features-tested)
   - [Bugs found and solved](#bugs-found-and-solved)
-
 
 
 ## Code Validation
@@ -35,6 +35,16 @@ To validate the code the following **validation services** and **linters** were 
     An open-source automated tool for improving webpages by running audits for performance, accessibility, progressive web apps, SEO etc.
 
     ![Lighthouse](/media/wireframes/lighthouse.png)
+
+
+## Validation of Code Testing 
+
+|  Tested   | Link                                                      | Warning/Errors |
+| :-------: | --------------------------------------------------------- | :------------: |
+|   HTML    | [W3C Html validator](https://validator.w3.org/nu/)        |       No       |
+|    CSS    | [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) |       No       |
+| JavaScipt | [JSHint](https://jshint.com/)                             |       No       |
+|  Python   | [PEP8](http://pep8online.com/)                            |       No       |
 
 ## Manual Testing
 
