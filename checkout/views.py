@@ -80,7 +80,7 @@ def checkout(request):
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "One of the products in your bag wasn't found in our database. "
-                        "Please call us for assistance!")
+                        "Please message us for assistance!")
                     )
                     order.delete()
                     return redirect(reverse('view_bag'))
