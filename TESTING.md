@@ -9,7 +9,7 @@
   - [Table of Contents](#table-of-contents)
   - [Code Validation](#code-validation)
   - [Validation Services](#validation-services)
-  - [Validation of Code Testing](#validation-of-code-testing)
+  - [Validation of Code](#validation-of-code)
   - [Manual Testing](#manual-testing)
     - [Devices and browsers](#devices-and-browsers)
     - [Features tested](#features-tested)
@@ -37,7 +37,7 @@ To validate the code the following **validation services** and **linters** were 
     ![Lighthouse](/media/wireframes/lighthouse.png)
 
 
-## Validation of Code Testing 
+## Validation of Code 
 
 |  Tested   | Link                                                      | Warning/Errors |
 | :-------: | --------------------------------------------------------- | :------------: |
