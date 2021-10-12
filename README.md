@@ -28,6 +28,7 @@ ___
     - [Features on the Checkout Page](#features-on-the-checkout-page)
     - [Features on the Confirmation/Thank you Page](#features-on-the-confirmationthank-you-page)
     - [Features on the Subscription feature](#features-on-the-subscription-feature)
+    - [Custom error pages](#custom-error-pages)
   - [Future features](#future-features)
 - [Technologies Used](#technologies-used)
   - [Backend:](#backend)
@@ -412,12 +413,16 @@ Those fields are for a referrence only, can't be adjusted by the user.
   * Error while subscribing.
 * The user will be receiving an email in their inbox.
 
+### Custom error pages
+* For a better user experience, it will display a page error 403, 404 and 500.
+* The user is prompted with a button to return to the home page.
+
 
 ## Future features 
 
 * Pagination
 * Confirm Deletion Modal
-* Returns
+* Returns 
 * Social media log in
 
 
