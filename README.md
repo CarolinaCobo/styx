@@ -1,4 +1,4 @@
-<h1> # Styx Shoes </h1>
+<h1> Styx Shoes </h1>
 
 View a live version of the site [here](https://styx-shoes.herokuapp.com/).
 
@@ -27,7 +27,7 @@ ___
     - [Features on the Shopping Bag](#features-on-the-shopping-bag)
     - [Features on the Checkout Page](#features-on-the-checkout-page)
     - [Features on the Confirmation/Thank you Page](#features-on-the-confirmationthank-you-page)
-    - [Features on the Subscription navbar](#features-on-the-subscription-navbar)
+    - [Features on the Subscription feature](#features-on-the-subscription-feature)
   - [Future features](#future-features)
 - [Technologies Used](#technologies-used)
   - [Backend:](#backend)
@@ -321,31 +321,22 @@ The same will be displayed accoss the different sections:
 
 * Form Fields 
   * The form fields have instructions and form validation that will notify the users when the form has been filled out incorrectly. 
-
 * Category Form Field 
   * Dropdown menu that allows the super user to choose the category for the product they are adding,
-
 * SKU Form Field 
-
-* Product Name Form Field 
-  * Nme of the product the user wants to add.
-
+* Product Name Form Field
+  * Name of the product the user wants to add.
 * Product Description Form Field 
   * Description that will be displayed when a user is buying on the site.  
-
 * Price Form Field 
   * The price the item.
-
 * Image URL Form Field 
   * Image URLs should start with http:// and can be also copied and pasted. 
   * If the image is stored on the user computer in use, super users can use the Select Image button to search their files and upload the image from there.
-
 * Select Image Button 
   * Allows super users to search through their computer files and upload an image from those rather than use the image URL.
-
 * Cancel Button 
   * Directs users back to the All Products page.
-
 * Add Product Button 
   * Adds the new item to the database, it will be available across all the pages.
 
@@ -411,7 +402,7 @@ The same structure can be found in the different apps across the site.
 
 Those fields are for a referrence only, can't be adjusted by the user.
 
-### Features on the Subscription navbar
+### Features on the Subscription feature
 
 * The user can subscribe to the page.
 * The user have an input box and a button to subscribe.
@@ -731,6 +722,7 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 * Products info and pictures - [JD Sports](https://www.jdsports.ie/)
 * Wireframes - [Balsamiq](https://balsamiq.com/wireframes/)
 * Data Schema - [DBDiagram](https://dbdiagram.io)
+* Text - [Cat Ipsum](http://www.catipsum.com)
 
 ## Media 
 
