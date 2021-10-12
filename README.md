@@ -752,8 +752,8 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 * [Codú Community](https://www.youtube.com/channel/UCvI5azOD4eDumpshr00EfIw)
 * [FreeCodeCamp](https://www.freecodecamp.org/)
 * Code Institute fellow students finished projects, ideas in other apps to use and logic used in their development. 
-  *  JoeyyScott > Gamer-supplies
-  *  Gwen-Bradbury - Gimporium
+  *  [JoeyyScott - Gamer-supplies](https://github.com/JoeyyScott/gamer-supplies)
+  *  [Gwen-Bradbury - Gimporium](https://github.com/Gwen-Bradbury/MS4)
 
 ### I received advice and support from
 
