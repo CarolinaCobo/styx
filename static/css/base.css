@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
+/* Default colors variables */
 :root {
   --black: #2b2b2b;
+  --default-blue: #17a2b8; 
 }
 
 html {
@@ -19,18 +21,11 @@ hr {
   opacity: 0;
 }
 
-.text-primary {
-  color: #17a2b8!important;
-}
-/* from Bulma */
-.icon {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
+a {
+  color: var(--default-blue);
 }
 
+/********************************************* Logo */
 .logo-font {
   text-transform: uppercase;
   font-family: "DM Sans", sans-serif;
@@ -41,6 +36,30 @@ hr {
   width: fit-content;
 }
 
+.shoes-logo {
+  font-size: 190px;
+}
+
+.text-primary {
+  color: var(--default-blue)!important;
+}
+/********************************************* End Logo section */
+
+
+/********************************************* Icons and text */
+
+/* from Bulma */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+/********************************************* EDN icons and text */
+
+
+/********************************************* Buttons */
 .shop-now-button {
   background: var(--black);
   color: white;
@@ -48,9 +67,6 @@ hr {
   border-radius: 8px;
 }
 
-.shoes-logo {
-  font-size: 190px;
-}
 
 .btn-black {
   background: var(--black);
@@ -75,9 +91,30 @@ hr {
 }
 
 .dropdown-item:active {
-  background-color: #17a2b8 !important;
+  background-color: var(--default-blue) !important;
 }
 
+a.category-badge > span.badge:hover {
+  background: #212529 !important;
+  color: #fff !important;
+}
+
+.btt-button {
+  height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--default-blue);
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* Button color styles */
 .text-black {
   color: var(--black) !important;
 }
@@ -86,6 +123,13 @@ hr {
   border: 1px solid #c9ccd5 !important;
 }
 
+.bg-black {
+  background: var(--black) !important;
+}
+/********************************************* END Buttons */
+
+
+/********************************************* Border Radius config */
 .border-radius {
   border-radius: 8px 0 0 8px;
 }
@@ -93,15 +137,13 @@ hr {
 .border-radius-card {
   border-radius: 8px 8px 0 0;
 }
-
-.bg-black {
-  background: var(--black) !important;
-}
-
-.border-radius-button {
+.border-radius-default {
   border-radius: 8px;
 }
+/********************************************* END Border Radius config */
 
+
+/********************************************* Overlay */
 .overlay {
   height: 100%;
   width: 100%;
@@ -111,37 +153,29 @@ hr {
   background: white;
   z-index: -1;
 }
+/********************************************* END Overlay */
 
+
+/********************************************* Styled links */
 .styled-link {
-  color: #17a2b8;
+  color: var(--default-blue);
   text-decoration: none;
 }
 
 .styled-link:hover {
   color: var(--black);
   text-decoration: none;
-
 }
+/********************************************* END styled links */
 
 
-a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
-}
-
-.btt-button {
-    height: 42px;
-    width: 42px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    background-color: #17a2b8;
-}
-
-.btt-link,
-.update-link,
-.remove-item {
-    cursor: pointer;
+/********************************************* Footer */
+.page-footer{
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
+  
 }
 
 input[name='q']::placeholder {
@@ -151,21 +185,21 @@ input[name='q']::placeholder {
 
 #delivery-banner {
   height: 30px;
-  background-color: #17a2b8;
+  background-color: var(--default-blue);
 }
 
 #delivery-banner h4 {
   margin: auto;
   padding: 15px;
   font-size: large;
-  background-color: #17a2b8;
+  background-color: var(--default-blue);
 
 }
 
 #signupButton {
-  background-color: #17a2b8 !important;
+  background-color: var(--default-blue) !important;
   color: #fff;
-  border: solid #17a2b8;
+  border: solid var(--default-blue);
 
 }
 
@@ -175,7 +209,7 @@ input[name='q']::placeholder {
 
 
 .signupForm > input[name=email] {
-  width: 240px;
+  width: 150px;
   border:gray;
   border-radius: 8px 0 0 8px !important;
 }
@@ -186,8 +220,11 @@ input[name='q']::placeholder {
 .contact-link > a {
   color:#fff;
 }
-/************ bootstrap toasts */
 
+/********************************************* End footer */
+
+
+/********************************************* bootstrap toasts */
 .message-container {
   position: fixed;
   top: 72px;
@@ -213,12 +250,13 @@ input[name='q']::placeholder {
     position: absolute;
     top: -10px;
     right: 36px;
-
 }
+/********************************************* End Toast secition  */
 
-/* Convenience classes - colors copied from Bootstrap */
+
+/********************************************* Convenience classes - colors from Bootstrap */
 .arrow-primary {
-  border-bottom-color: #17a2b8 !important;
+  border-bottom-color: var(--default-blue) !important;
 }
 
 .arrow-secondary {
@@ -238,7 +276,7 @@ input[name='q']::placeholder {
 }
 
 .arrow-info {
-  border-bottom-color: #17a2b8 !important;
+  border-bottom-color: var(--default-blue) !important;
 }
 
 .arrow-light {
@@ -254,25 +292,10 @@ input[name='q']::placeholder {
   overflow-x: hidden;
   overflow-y: auto;
 }
+/********************************************* END Convenience classes */
 
-/**************************************************** Media Queries */
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
-/* Allauth form formatting */
-
+/************************************************  Allauth form formatting */
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
     color: #6c757d; /* text-secondary */
@@ -322,14 +345,12 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+	color: var(--default-blue); /* text-info */
 }
 
-a {
-  color: #17a2b8;
-}
+/*********************************************** END Allauth form formatting */
 
-/* Product Form */
+/*********************************************** Product Form */
 .btn-file {
   position: relative;
   overflow: hidden;
@@ -356,26 +377,18 @@ a {
   border-radius: 8px;
 }
 
-
-.page-footer{
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  margin-bottom: 0px;
-  
+a.text-primary:focus, a.text-primary:hover {
+  color: var(--black)!important;
 }
 
-.card-img-top {
-  max-height: 600px;
-}
+/*********************************************** END Product Form */
 
 
-
+/**********************************************  Hero image  */
 .homepage-image {
   background-image: url('/media/homepage.jpeg');
   background-size: cover;
   background-position: center;
-
 }
 
 .hero-text {
@@ -387,13 +400,17 @@ a {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+/**********************************************  END hero image  */
 
 
-a.text-primary:focus, a.text-primary:hover {
-  color: var(--black)!important;
+/**********************************************  Explore posts image  */
+.card-img-top {
+  max-height: 600px;
 }
+/**********************************************  END Explore posts image   */
 
-/* fixed top navbar only on medium and up */
+
+/* Fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
         position: fixed;
@@ -409,14 +426,15 @@ a.text-primary:focus, a.text-primary:hover {
 }
 
 
-/* pad the top a bit when navbar is collapsed on mobile */
+/**************************************************** Media Queries */
+/* Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
-  .header-container {
-    padding-top: 116px;
-  }
-
   body {
     height: calc(100vh - 116px);
+  }
+
+  .header-container {
+    padding-top: 116px;
   }
 }
 
@@ -428,6 +446,10 @@ a.text-primary:focus, a.text-primary:hover {
 
   body {
     height: calc(100vh - 116px);
+  }
+
+  .hero-text > h1 {
+    font-size: xx-large;
   }
 
   .display-4.logo-font.text-black {
@@ -447,17 +469,24 @@ a.text-primary:focus, a.text-primary:hover {
     font-size: 1rem;
   }
 
+  /* Smaller font in the dropdown item */
+  .dropdown-item {
+    font-size: small;
+  }
+
   #delivery-banner h4 {
     font-size: 0.9rem;
   }
 
-  .btn.btn-outline-black.border-radius-button,
-  .btn.btn-black.border-radius-button {
+  /* Buttons */
+
+  .btn.btn-outline-black.border-radius-default ,
+  .btn.btn-black.border-radius-default  {
     padding: 0.375rem 0.375rem;
   }
 
-  .btn.btn-outline-black.border-radius-button.btn-lg,
-  .btn.btn-black.border-radius-button.btn-lg {
+  .btn.btn-outline-black.border-radius-default .btn-lg,
+  .btn.btn-black.border-radius-default .btn-lg {
     padding: 0.375rem 0.375rem;
     font-size: 0.75rem;
   }
@@ -465,5 +494,20 @@ a.text-primary:focus, a.text-primary:hover {
   .increment-qty,
   .decrement-qty {
     padding: 0.25rem 0.5rem !important;
+  }
+
+}
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
   }
 }
