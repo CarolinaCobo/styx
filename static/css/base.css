@@ -205,6 +205,9 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+#delivery-banner h4 {
+  font-size: 0.9rem;
+}
 
 #delivery-banner {
   height: 30px;
@@ -411,6 +414,13 @@ a.text-primary:focus, a.text-primary:hover {
 }
 /**********************************************  END Explore posts image   */
 
+.nav-menu-items {
+  display: contents;
+}
+
+.menu-position-mobile {
+  left: 0;
+}
 
 /**************************************************** Media Queries */
 /* Fixed top navbar only on medium and up */
@@ -422,7 +432,6 @@ a.text-primary:focus, a.text-primary:hover {
       left: 0;
       z-index: 2;
   }
-
 }
 
 /* pad the top a bit when navbar is collapsed on mobile */
@@ -458,9 +467,7 @@ a.text-primary:focus, a.text-primary:hover {
     font-size: small;
   }
 
-  #delivery-banner h4 {
-    font-size: 0.9rem;
-  }
+
 
   .homepage-image {
     height: 400px;

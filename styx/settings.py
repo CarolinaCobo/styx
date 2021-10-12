@@ -34,7 +34,6 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['styx-shoes.herokuapp.com', '*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
