@@ -267,7 +267,6 @@ The same will be displayed accoss the different sections:
 
 * Post Image 
   * An image that related to the topic of the post.
-
 * Post title 
   * Information for the user about what the Explore entry is about.
 
@@ -275,17 +274,13 @@ The same will be displayed accoss the different sections:
 
 * Post Link 
   * A link to redirect the users back to the Explore page with all the posts available.
-
-
 * Date and Time Post was Published 
   * Date and time stamp and the profile name of the super user who created the post entry.
-
-
 * Post Content/Body 
   * The content of the blog that has been included by the super user.
-
 * Comments 
-  * The comments section shows site users other users responses to the blog.
+  * The comments section shows users responses to the blog.
+  * Only registered users can post comments. 
   * To post responses to the blogs is through the form directly under this section on the site page. 
   * When no comments have been add it will display 'No Comments Yet'.
   * This will include:
@@ -296,7 +291,6 @@ The same will be displayed accoss the different sections:
     * Comment the comment
     * Submit button
     * Post buttons
-
 
 ### Features on the Profile Page  
 
@@ -431,7 +425,6 @@ Those fields are for a referrence only, can't be adjusted by the user.
 ## Future features 
 
 * Pagination
-* Blog available for not registered users. 
 * Confirm Deletion Modal
 * Returns
 * Social media log in
