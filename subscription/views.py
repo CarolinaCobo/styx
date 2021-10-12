@@ -37,12 +37,12 @@ def email_list_signup(request):
             email = request.POST.get('email')
             response = subscribe(email)
             if response['subscription'] and response['subscription']['state'] == 'inactive':
-                messages.info(
+                messages.success(
                     request, "Subscribed, please confirm your email.")
             elif response['subscription'] and response['subscription']['state'] == 'active':
                 messages.info(
                     request, "Already subscribed, thanks for trying again!")
             else:
-                messages.info(
+                messages.error(
                     request, "Something went wrong, please try again.")
     return HttpResponseRedirect(request.META.get("HTTP_REFERER"))

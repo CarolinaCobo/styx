@@ -174,7 +174,7 @@ input[name='q']::placeholder {
 }
 
 
- input[name=signup-email] {
+.signupForm > input[name=email] {
   width: 240px;
   border:gray;
   border-radius: 8px 0 0 8px !important;
