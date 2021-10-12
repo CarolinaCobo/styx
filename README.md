@@ -1,6 +1,6 @@
 <h1> Styx Shoes </h1>
 
-View a live version of the site [here](https://styx-shoes.herokuapp.com/).
+**View a live version of the site [here](https://styx-shoes.herokuapp.com/).**
 
 This project has been created for educational purposes.
 
@@ -116,8 +116,9 @@ The different elements on the site (header/footer/nav links) remain the same acr
 
     * **Only as superuser** 
         * Admin (dropdown)
-            * Admin Panel
-            * Add product
+            * My profile
+            * Explore management
+            * Product management
 
 ### Wireframes 
 
@@ -125,7 +126,7 @@ The wireframes of the site can be found in the following links:
 
 * [Homepage](https://github.com/CarolinaCobo/styx/blob/main/media/wireframes/homepag.png)
 * [All products](https://github.com/CarolinaCobo/styx/blob/main/media/wireframes/shopping.png)
-* [Product detail](https://github.com/CarolinaCobo/styx/blob/main/media/wireframes/product*detail.png)
+* [Product detail](https://github.com/CarolinaCobo/styx/blob/main/media/wireframes/productdetail.png)
 * [Profile](https://github.com/CarolinaCobo/styx/blob/main/media/wireframes/profile.png)
 * [Bag](https://github.com/CarolinaCobo/styx/blob/main/media/wireframes/bag.png)
 * [Checkout](https://github.com/CarolinaCobo/styx/blob/main/media/wireframes/checkout.png)
@@ -490,7 +491,7 @@ services, such as EC2 and S3.
 
 # Testing
 
-It can be found [here](./TESTING.md)
+The full testing performed can be found [here](./TESTING.md)
 
 
 # Deployment 
@@ -614,9 +615,9 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 8.  To be able to run on Heroku A few more libraries are needed.
     [Gunicorn](https://gunicorn.org/) a (WSGI HTTP Server), [dj-databas-url](https://pypi.org/project/dj-database-url/) to connect with PostgreSQL and [Psycopg](https://www.psycopg.org/)(PostgreSQL adapter)
 
-        ```bash
-        $ pip install Gunicorn, dj-database, Psycopg
-        ```
+    ```bash       
+    $ pip install Gunicorn, dj-database, Psycopg
+    ```
 
 9.  To migrate to the postgres db. First `import dj-databas-url` at the top of the setting.py.
 10. Then comment out the default database configuration and add:
@@ -687,7 +688,7 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
 19. Now that heroku is ready to go, Inside the Django setting.py you will need to set up the AWS configs so the static files have a place to go.
     Add
 
-        ```python
+      ```python
         if 'USE_AWS' in os.environ:
             AWS_STORAGE_BUCKET_NAME = < Bucket Name >
             AWS_S3_REGION_NAME = < server location >
@@ -704,13 +705,13 @@ If you would like to use the [allauth](https://django-allauth.readthedocs.io/en/
             MEDIAFILES_LOCATION = 'media'
             STATIC_URL = f'http://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
             MEDIA_URL = f'http://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-        ```
+    ```
 
         >Specifies the hosts that focus can run on
 
-        ```python
+    ```python
             ALLOWED_HOSTS = ['127.0.0.1', 'styx-shoes.herokuapp.com']
-         ```
+      ```
 
 20. You are ready to push to Heroku
 
