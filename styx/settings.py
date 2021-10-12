@@ -30,8 +30,10 @@ SECRET_KEY = os.getenv('SECRET_KEY', '')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = True
+if 'DEVELOPMENT' in os.environ:
+    DEBUG = True
+else:
+    DEBUG = False
 
 ALLOWED_HOSTS = ['styx-shoes.herokuapp.com', '*']
 
