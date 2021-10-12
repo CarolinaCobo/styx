@@ -46,6 +46,7 @@ a {
 /********************************************* End Logo section */
 
 
+
 /********************************************* Icons and text */
 
 /* from Bulma */
@@ -58,6 +59,24 @@ a {
 }
 /********************************************* EDN icons and text */
 
+/**********************************************  Hero image  */
+.homepage-image {
+  background-image: url('/media/homepage.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-text {
+  color: #fff;
+
+}
+
+.background-opacity {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/**********************************************  END hero image  */
 
 /********************************************* Buttons */
 .shop-now-button {
@@ -168,7 +187,6 @@ a.category-badge > span.badge:hover {
 }
 /********************************************* END styled links */
 
-
 /********************************************* Footer */
 .page-footer{
   bottom: 0px;
@@ -207,7 +225,6 @@ input[name='q']::placeholder {
   padding-top: 10px;
 }
 
-
 .signupForm > input[name=email] {
   width: 150px;
   border:gray;
@@ -220,7 +237,6 @@ input[name='q']::placeholder {
 .contact-link > a {
   color:#fff;
 }
-
 /********************************************* End footer */
 
 
@@ -384,25 +400,6 @@ a.text-primary:focus, a.text-primary:hover {
 /*********************************************** END Product Form */
 
 
-/**********************************************  Hero image  */
-.homepage-image {
-  background-image: url('/media/homepage.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-
-.hero-text {
-  color: #fff;
-}
-
-.background-opacity {
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-/**********************************************  END hero image  */
-
-
 /**********************************************  Explore posts image  */
 .card-img-top {
   max-height: 600px;
@@ -410,23 +407,35 @@ a.text-primary:focus, a.text-primary:hover {
 /**********************************************  END Explore posts image   */
 
 
+/**************************************************** Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
 /* Fixed top navbar only on medium and up */
 @media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
+  .fixed-top-desktop-only {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+  }
 
-    .header-container {
-        padding-top: 164px;
-    }
 }
 
 
-/**************************************************** Media Queries */
 /* Pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
   body {
@@ -448,9 +457,6 @@ a.text-primary:focus, a.text-primary:hover {
     height: calc(100vh - 116px);
   }
 
-  .hero-text > h1 {
-    font-size: xx-large;
-  }
 
   .display-4.logo-font.text-black {
     font-size: 2rem;
@@ -498,16 +504,3 @@ a.text-primary:focus, a.text-primary:hover {
 
 }
 
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
