@@ -45,7 +45,7 @@
                 <div class="form-group">
                     <div class="input-group">
                         <div class="input-group-prepend">
-                            <button class="decrement-qty btn btn-sm btn-black border-radius-button"
+                            <button class="decrement-qty btn btn-sm btn-black border-radius-default "
                                 data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                 <span>
                                     <i class="fas fa-minus fa-sm"></i>
@@ -56,7 +56,7 @@
                             max="99" value="{{ item.quantity }}" data-item_id="{{ item.item_id }}"
                             id="id_qty_{{ item.item_id }}">
                         <div class="input-group-append">
-                            <button class="increment-qty btn btn-sm btn-black border-radius-button"
+                            <button class="increment-qty btn btn-sm btn-black border-radius-default "
                                 data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                 <span>
                                     <i class="fas fa-plus fa-sm"></i>
@@ -89,13 +89,13 @@
         </div>
         <br>
         <div class="col-12 text-right float-right mb-5 pb-5">
-            <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg border-radius-button">
+            <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg border-radius-default ">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
                 <span class="text-uppercase">Keep Shopping</span>
             </a>
-            <a href="{% url 'checkout' %}" class="btn btn-black btn-lg border-radius-button">
+            <a href="{% url 'checkout' %}" class="btn btn-black btn-lg border-radius-default ">
                 <span class="text-uppercase">Secure Checkout</span>
                 <span class="icon">
                     <i class="fas fa-lock"></i>
@@ -106,7 +106,7 @@
     {% else %}
     <div class="col-12 text-center">
         <p class="lead mb-5">Your bag is empty.</p>
-        <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg border-radius-button">
+        <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg border-radius-default ">
             <span class="icon">
                 <i class="fas fa-chevron-left"></i>
             </span>
