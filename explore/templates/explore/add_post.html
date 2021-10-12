@@ -21,6 +21,7 @@
             <hr>
         </div>
     </div>
+    <!--  Form to input the post info -->
     <div class="row">
         <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'add_post' %}" class="form mb-2" enctype="multipart/form-data">
@@ -32,6 +33,7 @@
                 {{ field }}
                 {% endif %}
                 {% endfor %}
+                <!-- Cancel and add post buttons -->
                 <div class="text-right">
                     <a class="btn btn-outline-black border-radius-default " href="{% url 'view_explore' %}">Cancel</a>
                     <button class="btn btn-black border-radius-default " type="submit">Add Post</button>
@@ -44,6 +46,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<!-- New image script -->
 <script>
     $('#new-image').change(function () {
         var file = $('#new-image')[0].files[0];

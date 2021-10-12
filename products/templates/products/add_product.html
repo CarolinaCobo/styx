@@ -10,7 +10,10 @@
 {% endblock %}
 
 {% block content %}
+<!-- Overlay -->
 <div class="overlay"></div>
+
+<!-- Product management container -->
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6 text-center">
@@ -20,7 +23,7 @@
             <hr>
         </div>
     </div>
-
+    <!-- Input to add product information -->
     <div class="row">
         <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
@@ -44,6 +47,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<!-- Script for new image -->
 <script>
     $('#new-image').change(function () {
         var file = $('#new-image')[0].files[0];

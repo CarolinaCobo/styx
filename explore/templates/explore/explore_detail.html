@@ -14,8 +14,10 @@
 
 {% block content %}
 <div class="overlay"></div>
+<!-- Post container -->
 <div class="container-sm">
     <div class="card border-0 mb-3">
+        <!-- post Image -->
         {% if post.image %}
         <a href="{{ post.image.url }}" target="_blank">
             <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.post_title }}">
@@ -25,10 +27,12 @@
             <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ post.post_title }}">
         </a>
         {% endif %}
+        <!-- Post body -->
         <div class="card-body">
             <h5 class="card-title mt-5">{{ post.post_title }}</h5>
             <p class="card-text">{{ post.post_content }}</p>
             <p class="card-text"><small class="text-muted">{{ post.post_date_posted|date:'F d, Y' }}</small></p>
+            <!-- Edit and delete posts, only available for creator or superuser -->
             {% if post.post_author == user or request.user.is_superuser %}
             <div class="block mt-2">
                 <small>
@@ -40,9 +44,7 @@
         </div>
     </div>
 </div>
-
-
-
+<!-- Add a comment section -->
 <hr class="w-50 mb-5">
 <div class="container comment-form">
     <div class="row">
@@ -50,6 +52,7 @@
             <h4>Leave a Comment</h4>
         </div>
     </div>
+    <!-- Only displays if user is authenticated -->
     {% if user.is_authenticated %}
     <div class="row mt-5">
         <div class="col-md-6 offset-md-3 mb-5">
@@ -67,6 +70,7 @@
         </div>
     </div>
     {% else %}
+    <!-- Display this if they are not logged in -->
     <div class="text-center mt-4">
         <label class="form-check-label" for="id-save-info">
             You need to
@@ -76,6 +80,7 @@
     </div>
     {% endif %}
 </div>
+<!-- Comments section -->
 <hr class="w-50 mb-5">
 <div class="container-fluid">
     <div class="row">
@@ -96,6 +101,7 @@
             </div>
         </div>
     </div>
+    <!-- If no comments will display this -->
     <div class="row mt-3">
         {% if not comments.all %}
         <div class="col-12 mb-5">

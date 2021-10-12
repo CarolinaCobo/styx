@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-
+<!-- Overlay for the background image -->
 <div class="overlay"></div>
 <br class="d-none d-md-block">
 <div class="container mb-2 bg-white cart container-shadow">
@@ -20,7 +20,7 @@
             <h2 class="logo-font mt-4 text-center">Shopping Bag</h2>
         </div>
     </div>
-
+    <!-- Poduct info, quantity and price -->
     <div class="row align-items-center">
         {% if bag_items %}
         {% for item in bag_items %}
@@ -35,10 +35,10 @@
                 {{ item.size|upper }}{% else %}N/A{% endif %}</p>
             <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
         </div>
-
         <div class="col-4 col-md-3 text-center">
             <p class="my-0"><strong>Quantity</strong><br> €{{ item.product.price }}</p>
         </div>
+        <!-- +/- quantity selector  -->
         <div class="col-4 col-md-3 mt-5 text-center">
             <form class="form update-form mt-4" method="POST" action="{% url 'adjust_bag' item.item_id %}">
                 {% csrf_token %}
@@ -66,12 +66,12 @@
                     </div>
                 </div>
             </form>
-
+            <!-- Update quantity/Remove items from shopping bag -->
             <a class="update-link text-info"><small>Update </small></a> |
             <a class="remove-item text-danger " id="remove_{{ item.item_id }}"
                 data-size="{{ item.size }}"><small>Remove</small></a>
-
         </div>
+        <!-- Total cost in the bag -->
         <div class="col-4 col-md-3 text-center">
             <p class="my-0"><strong>Total:</strong><br> €{{ item.product.price | calc_subtotal:item.quantity }}</p>
         </div>
@@ -79,6 +79,7 @@
         <div class="col text-right mt-5">
             <h6><strong>Bag Total: €{{ total|floatformat:2 }}</strong></h6>
             <h6>Delivery: €{{ delivery|floatformat:2 }}</h6>
+            <!-- Free delivey ingormation -->
             <h4><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></h4>
             {% if free_delivery_delta > 0 %}
             <p class="mb-1 text-danger">
@@ -88,6 +89,7 @@
             {% endif %}
         </div>
         <br>
+        <!-- Buttons -->
         <div class="col-12 text-right float-right mb-5 pb-5">
             <a href="{% url 'products' %}" class="btn btn-outline-black btn-lg border-radius-default ">
                 <span class="icon">

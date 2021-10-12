@@ -10,7 +10,10 @@
 {% endblock %}
 
 {% block content %}
+<!-- Overlay -->
 <div class="overlay"></div>
+
+<!-- Title  -->
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -21,6 +24,7 @@
         </div>
     </div>
 
+    <!-- Input to add product information -->
     <div class="row">
         <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2"

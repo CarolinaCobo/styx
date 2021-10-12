@@ -24,7 +24,7 @@
             <hr>
         </div>
     </div>
-
+    <!-- Order Summary -->
     <div class="row">
         <div class="col-12 col-lg-6 order-lg-last mb-5">
             <p class="text-muted">Order Summary ({{ product_count }})</p>
@@ -37,6 +37,7 @@
                 </div>
             </div>
             {% for item in bag_items %}
+            <!-- Product image -->
             <div class="row">
                 <div class="col-2 mb-1">
                     <a href="{% url 'product_detail' item.product.id %}">
@@ -47,6 +48,7 @@
                         {% endif %}
                     </a>
                 </div>
+                <!-- Product size -->
                 <div class="col-7">
                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                     <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A
@@ -58,6 +60,7 @@
                 </div>
             </div>
             {% endfor %}
+            <!-- Total order details -->
             <hr class="my-0">
             <div class="row text-black text-right">
                 <div class="col-7 offset-2">
@@ -72,6 +75,7 @@
                 </div>
             </div>
         </div>
+        <!-- Order form -->
         <div class="col-12 col-lg-6">
             <p class="text-muted">Please fill out the form below to complete your order</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
@@ -104,6 +108,7 @@
                         {% endif %}
                     </div>
                 </fieldset>
+                <!-- Stripe payments field -->
                 <fieldset class="px-3">
                     <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                     <!-- A Stripe card element will go here -->
@@ -126,6 +131,7 @@
                             <i class="fas fa-lock"></i>
                         </span>
                     </button>
+                    <!-- Message to display the amount of money that will be charged -->
                     <p class="small text-danger my-0">
                         <span class="icon">
                             <i class="fas fa-exclamation-circle"></i>
@@ -137,6 +143,7 @@
         </div>
     </div>
 </div>
+<!-- Loading spinner -->
 <div id="loading-overlay">
     <h1 class="text-light logo-font loading-spinner">
         <span class="icon">
