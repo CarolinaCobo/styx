@@ -235,8 +235,11 @@ input[name='q']::placeholder {
 
 .signupForm > input[name=email] {
   width: 150px;
-  border:gray;
   border-radius: 8px 0 0 8px !important;
+}
+
+input[name=email] {
+  color: #aab7c4
 }
 
 .contact-link {
