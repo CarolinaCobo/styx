@@ -19,14 +19,12 @@ def view_explore(request):
     return render(request, 'explore/explore.html', context)
 
 
-@login_required
 def explore_detail(request, post_id):
     """ Returns explore_detail.html """
     post = get_object_or_404(Post, pk=post_id)
     comments = post.comments.filter()
     new_comment = None
     template = 'explore/explore_detail.html'
-
     if request.method == 'POST':
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
