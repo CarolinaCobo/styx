@@ -1,46 +1,55 @@
-<h1 align="center">Styx Shoes</h1>
+<h1> # Styx Shoes </h1>
 
-View a live version of the site [here](https://gamer*supplies.herokuapp.com).
+View a live version of the site [here](https://styx-shoes.herokuapp.com/).
 
 This project has been created for educational purposes.
 
 It is an E-Commerce site for a fictional company 'Gamer Supplies' which offers a variety of snacks for sale.
 
-
 ![Responsive](./media/wireframes/responsive.png)
 ___
 
-##  Contents
+## Table of Contents
 
-* [**User Experience (UX)**](<#user*experience>)
+- [Database Schema](#database-schema)
+- [Features](#features)
+  - [Existing Features](#existing-features)
+    - [Features in all apps](#features-in-all-apps)
+    - [Features on the Home Page](#features-on-the-home-page)
+    - [Features on the Sign Up Page](#features-on-the-sign-up-page)
+    - [Features on the Sign In/Log in Page](#features-on-the-sign-inlog-in-page)
+    - [Features on All Products](#features-on-all-products)
+    - [Features on the Products Information Page](#features-on-the-products-information-page)
+    - [Features on the Explore Page](#features-on-the-explore-page)
+    - [Features on the Post Page](#features-on-the-post-page)
+    - [Features on the Profile Page](#features-on-the-profile-page)
+    - [Features on the Product Management - Add and Edit a Product](#features-on-the-product-management---add-and-edit-a-product)
+    - [Features on the Shopping Bag](#features-on-the-shopping-bag)
+    - [Features on the Checkout Page](#features-on-the-checkout-page)
+    - [Features on the Confirmation/Thank you Page](#features-on-the-confirmationthank-you-page)
+    - [Features on the Subscription navbar](#features-on-the-subscription-navbar)
+  - [Future features](#future-features)
+- [Technologies Used](#technologies-used)
+  - [Backend:](#backend)
+  - [Programming Languages](#programming-languages)
+  - [Libraries](#libraries)
+  - [API's](#apis)
+  - [Email](#email)
+  - [Database](#database)
+  - [Tools](#tools)
+- [Testing](#testing)
+- [Deployment](#deployment)
+  - [Local Deployment](#local-deployment)
+  - [Heroku Deployment](#heroku-deployment)
+- [Credits](#credits)
+  - [Content](#content)
+  - [Media](#media)
+  - [Acknowledgements](#acknowledgements)
+    - [I received inspiration for this project from:](#i-received-inspiration-for-this-project-from)
+    - [I received advice and support from](#i-received-advice-and-support-from)
 
-  * [Goals](<#project*goals>)
-  * [Content Requirements](<#content*requirements>)
-  * [Importance and Feasibility chart](<#importance*and*feasibility*chart>)
-  * [User Stories](<#user*stories>)
-  * [Website Structure](<#website*structure>)
-  * [Design](<#design>)
-    * Colours
-    * Font
-  * [Wireframes](<#wireframes>)
- 
-* [**Database Schema**](<#database*schema>)
 
-* [**Features**](#features)
-
-* [**Technologies**](#technologies)
-
-* [**Testing**](#testing)
-
-* [**Deployment**](#deployment)
-
-* [**Credits**](#credits)
-
-* [**Acknowledgements**](#acknowledgements)
-  
-___
-
-# User Experience
+## User Experience 
 
 ## Project Goals
 
@@ -57,9 +66,9 @@ This project is for educational purposes only.
 | 4. Users can search for products by keyworkds                          |     4      |           4           |
 | 5. Users can sign up to the newsletter                                 |     3      |           4           |
 
-## User stories
+## User Stories
 
-### User goals
+### User Goals
 
 * As a **User**, I want to easily understand the purpose of the site when navigating on it.
 * As a **User**, I want to be able to intuitively navigate the entire site in an easy way.
@@ -416,6 +425,7 @@ Those fields are for a referrence only, can't be adjusted by the user.
   * New subscriptor, they have to confirm their email address.
   * Already subscribed.
   * Error while subscribing.
+* The user will be receiving an email in their inbox.
 
 
 ## Future features 

@@ -243,6 +243,16 @@ Both methods were tested and gave appropriate responses.
 * When users have checked out and paid, they are directed to a thankyou page with a copy of their order and a link which directs the to the Latest Deals page. 
 It will also display a toast message with all the details. 
 
+
+**Subscription:** 
+* The subscription form is available in all the pages. 
+* It asks the user to input a correct email.
+* User receives an email to confirm their subscription.
+* A toast message displays showing:
+  * Success - New user so they will have to check their email.
+  * Info - If they have already subscribed.
+  * Error - If there is an error. 
+
 ## Bugs found and solved
 
 The issues found have been tracked on Github directly and can be found [here](https://github.com/CarolinaCobo/styx/issues?q=is%3Aissue+is%3Aclosed).
