@@ -521,7 +521,7 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 3. Clone the repository from github.
 
    ```bash
-   $ git clone https://github.com/Clinton-Davis/styx.git
+   $ git clone https://github.com/carolina_cobo/styx.git
    ```
 
 4. Change into styx directory.
