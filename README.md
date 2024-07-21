@@ -521,12 +521,12 @@ Once you have [Git](https://git-scm.com/) and [Pip](https://pip.pypa.io/en/stabl
 3. Clone the repository from github.
 
    ```bash
-   $ git clone https://github.com/Clinton-Davis/focus_fitness.git
+   $ git clone https://github.com/Clinton-Davis/styx.git
    ```
 
-4. Change into focus_fitness directory.
+4. Change into styx directory.
 
-   `$ cd focus_fitness`
+   `$ cd styx`
 
 5. Install [virtualenv](https://pypi.org/project/virtualenv/)
 
